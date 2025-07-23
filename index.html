@@ -101,61 +101,105 @@
 
 
     <!-- Carousel Start -->
-     <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body, html {
-            height: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+       
 
         .bg {
-            background-image: url('/img/carousel-1.jpg'); /* replace with your image path */
-            height: 100%;
-            background-position: center;
+            background-image: url('/img/carousel-1.jpg'); /* Replace with your image */
             background-size: cover;
-            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
         }
 
         .overlay {
-            background-color: rgba(49, 49, 49, 0.5);
             position: absolute;
-            width: 100%;
-            height: 100%;
             top: 0;
             left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
         }
 
         .content {
-            color: #ffffff;
+            position: relative;
             z-index: 2;
             text-align: center;
+            color: #ffffff;
+            padding: 20px;
+            max-width: 800px;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .content h1 {
             font-size: 3rem;
-            animation: fadeIn 2s ease-in-out;
+            color: #ffffff;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out, glow 2s infinite alternate;
         }
 
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            animation: slideUp 2s ease-in-out;
+        }
+
+        /* Animations */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-40px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+        }
     </style>
-</head>
-<body>
+
     <div class="bg">
         <div class="overlay"></div>
         <div class="content">
-            <h1>Welcome to SLN CLOUD CONSULTING INC</h1>
+            <h1 >Welcome to SLN CLOUD CONSULTING INC</h1>
+            <p>
+                We are a team of passionate professionals delivering world-class Oracle and cloud consulting solutions.
+                Our mission is to help businesses innovate, scale, and succeed through digital transformation and modern enterprise technology.
+            </p>
         </div>
     </div>
     <!-- Carousel End -->
