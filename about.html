@@ -85,29 +85,94 @@
     .btn-primary:hover {
       background-color: #4338ca;
     }
+    /* Navbar entrance animation */
+.animated-navbar {
+  animation: slideFadeIn 1.2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideFadeIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Logo and brand styling */
+.brand-text {
+  color: #1f2937;
+  line-height: 1.2;
+}
+
+.brand-text .tagline {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* Navbar links animation */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  background-color: #2563eb;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.animated-link:hover {
+  color: #2563eb;
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand text-primary" href="/index.html">SLN Cloud Consulting Inc</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li> -->
-           <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="/project.html">Careers</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-        </ul>
+  <nav class="navbar navbar-expand-lg fixed-top animated-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="/index.html">
+      <img src="/img/SLN Logo_1.png" alt="Logo" width="90" height="100" style="margin-right: 10px;">
+      <div class="brand-text">
+        <strong>SLN CLOUD CONSULTING</strong>
+        <span class="tagline d-block">WHERE STRATEGY MEETS Execution</span>
       </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link animated-link" href="/service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link animated-link" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link animated-link" href="/project.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link animated-link" href="/contact.html">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
 
     <!-- Page Header -->
