@@ -87,12 +87,12 @@
     }
 
     .navbar {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgb(255, 255, 255);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .form-container {
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color:white;
       padding: 40px;
       border-radius: 15px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -122,24 +122,29 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand text-primary" href="/index.html">SLN Cloud Consulting Inc</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li> -->
-           <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="/project.html">Careers</a></li>
-          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="/index.html">
+      <img src="/img/SLN Logo_1.png" alt="Logo" width="90" height="100" style="margin-right: 10px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/project.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
     <!-- Navbar End -->
 
@@ -259,7 +264,7 @@
                     <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
                         <img src="img/icon/icon-1.png" alt="Icon" class="img-fluid">
                     </div>
-                    <h5 class="mb-2 text-primary">Our Services: </h5>
+                    <h5 class="mb-2 text-primary">Our Services </h5>
                     <h6 class="mb-3">PLAN, THEN DO</h6>
                     <p class="text-muted small">We craft long-term strategies that fast-track implementation and growth. Over 90% of our business comes from referrals and returning clients.</p>
                 </div>
@@ -271,7 +276,7 @@
                     <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
                         <img src="img/icon/icon-2.png" alt="Icon" class="img-fluid">
                     </div>
-                    <h5 class="mb-2 text-primary">Our Approach: </h5>
+                    <h5 class="mb-2 text-primary">Our Approach </h5>
                     <h6 class="mb-3">EXECUTE, DON'T EXCUSE</h6>
                     <p class="text-muted small">We leverage strengths to overcome weaknesses with confidence and strategy. DLite believes in execution, not excuses.</p>
                 </div>
@@ -283,8 +288,8 @@
                     <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
                         <img src="img/icon/icon-3.png" alt="Icon" class="img-fluid">
                     </div>
-                    <h5 class="mb-2 text-primary">Our Results: </h5>
-                    <h6 class="mb-3">PROVE, THEN IMPROVE</h6>
+                    <h5 class="mb-2 text-primary fs-5">Our Results </h5>
+                    <h6 class="mb-3 fs-15">PROVE, THEN IMPROVE</h6>
                     <p class="text-muted small">Our success stories speak louder than claims. We deliver results through cloud-driven digital transformation and smart technologies.</p>
                 </div>
             </div>
@@ -330,218 +335,255 @@
 
     <!-- Service Start -->
     
-    <style>
-        :root {
-            --primary: #2563eb;
-            --accent: #4f46e5;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --bg-light: #f9fafb;
-            --bg-white: #fff;
-            --border: #e5e7eb;
-            --shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
+  <style>
+    :root {
+        --primary: #2563eb;
+        --accent: #4f46e5;
+        --success: #10b981;
+        --text-primary: #1f2937;
+        --text-secondary: #6b7280;
+        --bg-light: #f9fafb;
+        --bg-white: #fff;
+        --border: #e5e7eb;
+        --shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        body {
-            background: var(--bg-light);
-        }
+    body {
+        background: var(--bg-light);
+    }
 
-        .services-section {
-            padding: 80px 20px;
-            position: relative;
-            overflow: hidden;
-        }
+    .services-section {
+        padding: 80px 20px;
+        position: relative;
+        overflow: hidden;
+    }
 
-        .services-section .container {
-            max-width: 1200px;
-            margin: auto;
-            position: relative;
-            z-index: 1;
-        }
+    .services-section .container {
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+    }
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
+    .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
 
+    .section-header h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        background: linear-gradient(to right, var(--primary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: fadeInDown 1s ease forwards;
+    }
+
+    .section-header p {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 1rem auto 0;
+        animation: fadeIn 1.5s ease forwards;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card {
+        background: var(--bg-white);
+        padding: 2rem;
+        border-radius: 1.5rem;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        transition: 0.3s ease;
+        position: relative;
+        animation: fadeUp 1.2s ease forwards;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--primary);
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .card-icon {
+        background: linear-gradient(to right, var(--primary), var(--accent));
+        color: white;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+    }
+
+    .card-features {
+        list-style: none;
+        padding-left: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-features li {
+        margin-bottom: 0.5rem;
+        position: relative;
+        color: var(--text-secondary);
+    }
+
+    .card-features li::before {
+        content: '\f00c';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        color: var(--success);
+        position: absolute;
+        left: -1rem;
+    }
+
+    .learn-more {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        background: linear-gradient(to right, var(--primary), var(--accent));
+        color: white;
+        border: none;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        font-weight: 600;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .learn-more:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 768px) {
         .section-header h2 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 2rem;
         }
+    }
+</style>
 
-        .section-header p {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 1rem auto 0;
-        }
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: var(--bg-white);
-            padding: 2rem;
-            border-radius: 1.5rem;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border);
-            transition: 0.3s ease;
-            position: relative;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary);
-        }
-
-        .card-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-
-        .card-icon {
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            color: white;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            margin-right: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .card-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-
-        .card-description {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-
-        .card-features {
-            list-style: none;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .card-features li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            color: var(--text-secondary);
-        }
-
-        .card-features li::before {
-            content: '\f00c';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--success);
-            position: absolute;
-            left: -1rem;
-        }
-
-        .learn-more {
-            display: inline-block;
-            padding: 0.6rem 1.2rem;
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            color: white;
-            border: none;
-            border-radius: 0.75rem;
-            cursor: pointer;
-            font-weight: 600;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-
-        .learn-more:hover {
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            .section-header h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <section class="services-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Where Can We Help You</h2>
-                <p>Cutting-edge IT services tailored to accelerate your business transformation and success.</p>
+<!-- Services Section HTML -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Where Can We Help You</h2>
+            <p>Cutting-edge Oracle Cloud solutions tailored to accelerate your digital transformation and long-term success.</p>
+        </div>
+        <div class="cards-grid">
+            <!-- Card 1: Oracle Cloud Implementations -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 class="card-title">Oracle Cloud Implementations</h3>
+                </div>
+                <p class="card-description">End-to-end Oracle Cloud (ERP, HCM, SCM, CX) implementations for seamless business process alignment.</p>
+                <ul class="card-features">
+                    <li>Oracle Cloud ERP, HCM, SCM</li>
+                    <li>Business Process Optimization</li>
+                    <li>Data Migration & Validation</li>
+                    <li>Post-Go-Live Hypercare</li>
+                </ul>
+                <button class="learn-more">Learn More</button>
             </div>
-            <div class="cards-grid">
-                <div class="service-card">
-                    <div class="card-header">
-                        <div class="card-icon"><i class="fas fa-cloud"></i></div>
-                        <h3 class="card-title">Cloud Implementations</h3>
-                    </div>
-                    <p class="card-description">Migrate and scale efficiently with tailored enterprise cloud solutions.</p>
-                    <ul class="card-features">
-                        <li>Oracle, AWS, Azure</li>
-                        <li>Cloud Monitoring</li>
-                        <li>Automation Tools</li>
-                    </ul>
-                    <button class="learn-more">Learn More</button>
+
+            <!-- Card 2: Managed Services -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3 class="card-title">Managed Services & Support</h3>
                 </div>
-                <div class="service-card">
-                    <div class="card-header">
-                        <div class="card-icon"><i class="fas fa-cogs"></i></div>
-                        <h3 class="card-title">Managed Services</h3>
-                    </div>
-                    <p class="card-description">Ensure continuous operation with proactive support and optimization.</p>
-                    <ul class="card-features">
-                        <li>24/7 Infrastructure Support</li>
-                        <li>Security & Compliance</li>
-                        <li>Cost Optimization</li>
-                    </ul>
-                    <button class="learn-more">Learn More</button>
+                <p class="card-description">Reliable managed services with functional, technical, and SLA-driven Oracle application support.</p>
+                <ul class="card-features">
+                    <li>24/7 Monitoring & Support</li>
+                    <li>Patch Management & Testing</li>
+                    <li>Performance Tuning</li>
+                    <li>SLA-Based Resolution</li>
+                </ul>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <!-- Card 3: OCI Services -->
+            <div class="service-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <h3 class="card-title">Cloud Infrastructure (OCI)</h3>
                 </div>
-                <div class="service-card">
-                    <div class="card-header">
-                        <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
-                        <h3 class="card-title">Data & Analytics</h3>
-                    </div>
-                    <p class="card-description">Drive decisions with intelligent insights and predictive analytics.</p>
-                    <ul class="card-features">
-                        <li>BI Dashboards</li>
-                        <li>ML & AI Solutions</li>
-                        <li>Data Governance</li>
-                    </ul>
-                    <button class="learn-more">Learn More</button>
-                </div>
+                <p class="card-description">Design, migrate, and manage secure Oracle Cloud Infrastructure tailored for performance & compliance.</p>
+                <ul class="card-features">
+                    <li>OCI Architecture & Design</li>
+                    <li>Infrastructure Migration</li>
+                    <li>Security & Governance</li>
+                    <li>Cost Optimization</li>
+                </ul>
+                <button class="learn-more">Learn More</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <!-- Service End -->
 
 
     <!-- Project Start -->
-    <style>
+   <style>
         :root {
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
@@ -551,13 +593,17 @@
             --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --gradient-tertiary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            --glass-bg: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
         }
-
 
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: var(--text-light);
         }
 
         .about-section {
@@ -570,13 +616,10 @@
             padding: 100px 0;
         }
 
-        /* Animated Background Elements */
         .bg-animation {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             overflow: hidden;
             z-index: 1;
         }
@@ -584,9 +627,9 @@
         .floating-orb {
             position: absolute;
             border-radius: 50%;
-            opacity: 0.7;
-            animation: float-complex 20s infinite ease-in-out;
+            opacity: 0.6;
             filter: blur(1px);
+            animation: float-complex 20s infinite ease-in-out;
         }
 
         .orb-1 {
@@ -617,36 +660,25 @@
         }
 
         @keyframes float-complex {
-            0%, 100% {
-                transform: translateY(0) translateX(0) rotate(0deg) scale(1);
-            }
-            25% {
-                transform: translateY(-30px) translateX(20px) rotate(90deg) scale(1.1);
-            }
-            50% {
-                transform: translateY(-60px) translateX(-10px) rotate(180deg) scale(0.9);
-            }
-            75% {
-                transform: translateY(-20px) translateX(30px) rotate(270deg) scale(1.05);
-            }
+            0%, 100% { transform: translateY(0) translateX(0) rotate(0deg) scale(1); }
+            25% { transform: translateY(-30px) translateX(20px) rotate(90deg) scale(1.1); }
+            50% { transform: translateY(-60px) translateX(-10px) rotate(180deg) scale(0.9); }
+            75% { transform: translateY(-20px) translateX(30px) rotate(270deg) scale(1.05); }
         }
 
-        /* Glass morphism container */
         .glass-container {
             position: relative;
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(15px);
             border-radius: 24px;
             padding: 60px 40px;
-            box-shadow: 
-                0 25px 50px rgba(0, 0, 0, 0.3),
-                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
-            z-index: 2;
+            max-width: 1000px;
+            margin: auto;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            animation: fadeInUp 1s ease-out 0.2s forwards;
             opacity: 0;
             transform: translateY(50px);
-            animation: fadeInUp 1s ease-out 0.3s forwards;
         }
 
         @keyframes fadeInUp {
@@ -656,424 +688,182 @@
             }
         }
 
-        /* Typography */
         .section-title {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            background: linear-gradient(to right, #fff, #cbd5e1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .section-title::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            animation: shimmer 3s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
-        }
-
-        .section-subtitle {
-            font-size: 1.5rem;
-            color: var(--text-light);
-            font-weight: 300;
-            margin-bottom: 3rem;
-            opacity: 0;
-            animation: fadeIn 1s ease-out 0.8s forwards;
-        }
-
-        @keyframes fadeIn {
-            to { opacity: 1; }
-        }
-
-        .section-description {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 3rem;
-            opacity: 0;
-            animation: fadeIn 1s ease-out 1s forwards;
-        }
-
-        /* Enhanced Value Cards */
-        .value-cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .value-card {
-            position: relative;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
-            box-shadow: 
-                0 20px 40px rgba(0, 0, 0, 0.1),
-                0 0 0 1px rgba(255, 255, 255, 0.1) inset;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transform: translateY(30px);
-            opacity: 0;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .value-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .value-card:hover::before {
-            left: 100%;
-        }
-
-        .value-card:hover {
-            transform: translateY(-15px) scale(1.03);
-            box-shadow: 
-                0 30px 60px rgba(0, 0, 0, 0.2),
-                0 0 0 1px rgba(59, 130, 246, 0.2) inset;
-        }
-
-        .card-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            font-size: 2rem;
-            color: white;
-            position: relative;
-            transition: all 0.4s ease;
-        }
-
-        .card-icon.consistency {
-            background: var(--gradient-primary);
-        }
-
-        .card-icon.evolution {
-            background: var(--gradient-secondary);
-        }
-
-        .card-icon.success {
-            background: var(--gradient-tertiary);
-        }
-
-        .value-card:hover .card-icon {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text-dark);
+            text-align: center;
             margin-bottom: 1rem;
-            text-align: center;
         }
 
-        .card-description {
-            color: #64748b;
-            text-align: center;
-            line-height: 1.6;
+        .section-description p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.85);
         }
 
-        /* Partner badges with glow effect */
         .partner-badge {
             display: inline-block;
-            padding: 0.5rem 1rem;
-            background: rgba(59, 130, 246, 0.1);
+            padding: 0.4rem 1rem;
+            background: rgba(59, 130, 246, 0.15);
             border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 50px;
             color: #3b82f6;
             font-weight: 600;
             margin: 0.25rem;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .partner-badge::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
-            transition: left 0.5s ease;
+            cursor: pointer;
         }
 
         .partner-badge:hover {
-            background: rgba(59, 130, 246, 0.2);
-            border-color: rgba(59, 130, 246, 0.5);
+            background: rgba(59, 130, 246, 0.3);
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
         }
 
-        .partner-badge:hover::before {
-            left: 100%;
+        .value-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 2.5rem;
-            }
-            
-            .glass-container {
-                padding: 40px 20px;
-                margin: 0 15px;
-            }
-            
-            .value-cards-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-        }
-
-        /* Animation delays for staggered entrance */
-        .value-card:nth-child(1) { animation: slideInUp 0.8s ease-out 1.5s forwards; }
-        .value-card:nth-child(2) { animation: slideInUp 0.8s ease-out 1.7s forwards; }
-        .value-card:nth-child(3) { animation: slideInUp 0.8s ease-out 1.9s forwards; }
-
-        @keyframes slideInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Micro interactions */
-        .interactive-element {
-            transition: all 0.2s ease;
-        }
-
-        .interactive-element:hover {
-            transform: scale(1.02);
-        }
-
-        /* Loading animation for icons */
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
-            }
-            50% {
-                box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
-            }
-        }
-
-        .card-icon::after {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: inherit;
-            border-radius: 22px;
-            z-index: -1;
-            filter: blur(10px);
+        .value-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-dark);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(50px);
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: all 0.5s ease;
         }
 
-        .value-card:hover .card-icon::after {
-            opacity: 0.7;
-            animation: pulse-glow 2s infinite;
+        .value-card.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .card-icon.consistency { background: var(--gradient-primary); }
+        .card-icon.evolution { background: var(--gradient-secondary); }
+        .card-icon.success { background: var(--gradient-tertiary); }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .card-description {
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 2rem; }
+            .glass-container { padding: 30px 20px; }
         }
     </style>
 </head>
 <body>
     <section class="about-section">
-        <!-- Animated Background -->
+        <!-- Background Orbs -->
         <div class="bg-animation">
             <div class="floating-orb orb-1"></div>
             <div class="floating-orb orb-2"></div>
             <div class="floating-orb orb-3"></div>
         </div>
 
-        <div class="container">
-            <div class="glass-container">
-                <div class="text-center">
-                    <h1 class="section-title">Who We Are</h1>
-                    
-                    <p class="section-subtitle">
-                        A global IT solutions provider constantly evolving to create smarter solutions for business challenges.
+        <!-- Main Content -->
+        <div class="glass-container">
+            <h1 class="section-title">Who We Are</h1>
+
+            <div class="section-description">
+                <p><strong>SLN Cloud Consulting Inc.</strong> is a specialized Oracle consulting firm delivering high-impact, client-first cloud solutions across Oracle Cloud Applications, E-Business Suite, and OCI.</p>
+
+                <p>Founded by industry veterans with decades of experience, we believe technology should serve the business—never the other way around. Our Oracle-certified consultants are trusted advisors in complex enterprise environments.</p>
+
+                <p>We serve clients in <strong>Public Sector</strong>, <strong>Healthcare</strong>, <strong>Energy</strong>, <strong>Education</strong>, and <strong>Financial Services</strong> with full lifecycle services: strategy, implementation, and optimization.</p>
+
+                <p>From planning to post-go-live support, we commit to delivering transformation outcomes that are technically sound, strategically aligned, and built for long-term success.</p>
+
+            </div>
+
+            <!-- Value Cards -->
+            <div class="value-cards-grid">
+                <div class="value-card">
+                    <div class="card-icon consistency"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 class="card-title">Oracle Cloud Experts</h3>
+                    <p class="card-description">
+                        Certified in ERP, HCM, SCM, EBS, and OCI—we deliver high-performing cloud solutions tailored to your needs.
                     </p>
-                    
-                    <div class="section-description">
-                        <p class="mb-4">
-                            Utilizing solid business experience, industry-specific expertise, and proven methodologies, we consistently deliver measurable results for our customers.
-                        </p>
-                        
-                        <p class="mb-4">
-                            <strong>SLN Cloud Consulting</strong> has partnered with leading enterprise software companies and cloud providers such as 
-                            <span class="partner-badge interactive-element">Oracle</span>
-                            <span class="partner-badge interactive-element">Amazon</span>
-                            <span class="partner-badge interactive-element">Microsoft</span>
-                            allowing us to deliver high-quality, end-to-end solutions tailored to each client's needs.
-                        </p>
-                        
-                        <p>
-                            We analyze your existing business processes, engage with your end-users, and implement strategic IT solutions addressing challenges like cloud infrastructure, analytics, and digital transformation.
-                        </p>
-                    </div>
+                </div>
 
-                    <!-- Value Cards -->
-                    <div class="value-cards-grid">
-                        <div class="value-card">
-                            <div class="card-icon consistency">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3 class="card-title">Consistency</h3>
-                            <p class="card-description">
-                                The foundation of lasting partnerships is delivering consistent quality and reliability in every engagement, ensuring your business can depend on our solutions.
-                            </p>
-                        </div>
+                <div class="value-card">
+                    <div class="card-icon evolution"><i class="fas fa-cogs"></i></div>
+                    <h3 class="card-title">On-Time, On-Budget Delivery</h3>
+                    <p class="card-description">
+                        Our proven execution frameworks deliver results fast, efficiently, and within your budget.
+                    </p>
+                </div>
 
-                        <div class="value-card">
-                            <div class="card-icon evolution">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <h3 class="card-title">Continuous Evolution</h3>
-                            <p class="card-description">
-                                We combine proven methodologies with cutting-edge innovation to deliver solutions that grow and adapt with your business needs and market changes.
-                            </p>
-                        </div>
-
-                        <div class="value-card">
-                            <div class="card-icon success">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <h3 class="card-title">Client Success</h3>
-                            <p class="card-description">
-                                Your success is our mission. We measure our achievements by the tangible value and transformational results we create for your organization.
-                            </p>
-                        </div>
-                    </div>
+                <div class="value-card">
+                    <div class="card-icon success"><i class="fas fa-users"></i></div>
+                    <h3 class="card-title">Client-First Culture</h3>
+                    <p class="card-description">
+                        We succeed when you do—building long-term partnerships around your goals and growth.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Enhanced scroll animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-in');
-                    }
-                });
-            }, observerOptions);
-
-            // Observe all animated elements
-            document.querySelectorAll('.value-card').forEach(card => {
-                observer.observe(card);
-            });
-
-            // Add parallax effect to floating orbs
-            let ticking = false;
-            
-            function updateParallax() {
-                const scrolled = window.pageYOffset;
-                const rate = scrolled * -0.5;
-                
-                document.querySelectorAll('.floating-orb').forEach((orb, index) => {
-                    const speed = (index + 1) * 0.3;
-                    orb.style.transform = `translateY(${rate * speed}px)`;
-                });
-                
-                ticking = false;
-            }
-
-            function requestTick() {
-                if (!ticking) {
-                    requestAnimationFrame(updateParallax);
-                    ticking = true;
+        // Reveal value cards on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
                 }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.value-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Parallax orbs on scroll
+        let ticking = false;
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            document.querySelectorAll('.floating-orb').forEach((orb, i) => {
+                const speed = (i + 1) * 0.3;
+                orb.style.transform = `translateY(${scrolled * speed * -0.2}px)`;
+            });
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(updateParallax);
+                ticking = true;
             }
-
-            window.addEventListener('scroll', requestTick);
-
-            // Add smooth hover effects for cards
-            document.querySelectorAll('.value-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.zIndex = '10';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.zIndex = '1';
-                });
-            });
-
-            // Add click effect for partner badges
-            document.querySelectorAll('.partner-badge').forEach(badge => {
-                badge.addEventListener('click', function(e) {
-                    // Create ripple effect
-                    const ripple = document.createElement('span');
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.height, rect.width);
-                    const x = e.clientX - rect.left - size / 2;
-                    const y = e.clientY - rect.top - size / 2;
-                    
-                    ripple.style.cssText = `
-                        position: absolute;
-                        border-radius: 50%;
-                        background: rgba(59, 130, 246, 0.4);
-                        transform: scale(0);
-                        animation: ripple 0.6s linear;
-                        left: ${x}px;
-                        top: ${y}px;
-                        width: ${size}px;
-                        height: ${size}px;
-                        pointer-events: none;
-                    `;
-                    
-                    this.appendChild(ripple);
-                    
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 600);
-                });
-            });
-
-            // Add CSS for ripple animation
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes ripple {
-                    to {
-                        transform: scale(4);
-                        opacity: 0;
-                    }
-                }
-            `;
-            document.head.appendChild(style);
         });
     </script>
     <!-- Project End -->
