@@ -74,7 +74,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">GrowMark</h1>
+                    <h1 class="fw-bold m-0">SLN Cloud Consulting Inc</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -85,16 +85,8 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">carrer</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="feature.html" class="dropdown-item">Features</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="quote.html" class="dropdown-item">Quotation</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
+                        <a href="project.html" class="nav-item nav-link">Careers</a>
+                        
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
@@ -1124,7 +1116,149 @@
         </div>
     </div> -->
     <!-- Team End -->
+ <style>
+    body {
+      margin: 0;
+      background: #f3f4f6;
+      font-family: "Segoe UI", sans-serif;
+    }
 
+    .slider-section {
+      background-color: #ffffff;
+      padding: 40px 0;
+      overflow: hidden;
+    }
+
+    .slider-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #1f2937;
+    }
+
+    .slider-container {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: max-content;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+      width: 180px;
+      margin: 0 25px;
+      text-align: center;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      opacity: 0.8;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .slide:hover img {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .slide p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #374151;
+    }
+
+    .slider-wrapper {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="slider-section">
+    <div class="slider-title">Our Trusted Clients</div>
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <!-- Repeat all logos twice for smooth scrolling -->
+
+        <!-- Client Logos with Names -->
+        <div class="slide">
+          <img src="https://th.bing.com/th/id/OIP.FJDFuG9_6cu-dR2uLa8BAQHaDD?w=318&h=144&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="UL LLC">
+          <p>UL LLC</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.XlrdMLRU4-ChL0cyg6MT9AHaD4?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Brookdale">
+          <p>Brookdale</p>
+        </div>
+        <div class="slide">
+          <img src="https://standards.phila.gov/img/logo/city-of-philadelphia.png" alt="City of Philadelphia">
+          <p>City of Philadelphia</p>
+        </div>
+        <div class="slide">
+          <img src="https://th.bing.com/th/id/R.9c34339b73e52a6909fcecaebd756ecc?rik=q%2bn5TCiev%2f05fQ&riu=http%3a%2f%2fgoldlink.etsu.edu%2fsites%2fall%2fcustom%2fimages%2fetsulogo.png&ehk=vr9DZhdTFsa37qWWCU%2bKHi6u185mXXSxWiFfAO1LmRM%3d&risl=&pid=ImgRaw&r=0" alt="ETSU">
+          <p>ETSU</p>
+        </div>
+        <div class="slide">
+          <img src="https://www.decodedmagazine.com/wp-content/uploads/2021/04/TAOGROUP-LOGO-Social-Icon.png" alt="TAO Group">
+          <p>TAO Group</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.v8Ax9IW84z0Bh3URJz11tQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Akamai">
+          <p>Akamai Technologies</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.0eGWlH14azsdvDRmNwEJ3AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="City of Las Vegas">
+          <p>City of Las Vegas</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.WaQnjfAJCthev-Lh9AFMQwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Forward Air">
+          <p>Forward Air</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.VLvMWzPOPcn4a-1EYNXpYQHaBg?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Barrick Gold">
+          <p>Barrick Gold</p>
+        </div>
+        <div class="slide">
+          <img src="https://th.bing.com/th/id/OIP.XRSJIFMVeCYRguMPLh-VYQHaEq?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="TJX Companies">
+          <p>TJX Companies Inc</p>
+        </div>
+        <div class="slide">
+          <img src="https://companieslogo.com/img/orig/AMC_BIG-2d4d2027.png?t=1674020115" alt="AMC">
+          <p>AMC Entertainments</p>
+        </div>
+        <div class="slide">
+          <img src="https://cdn.phenompeople.com/CareerConnectResources/KIVKBRUS/images/KBR_Logo_Registered_RGB-1667840270257.png" alt="KBR">
+          <p>KBR Constructions</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.tj3cWdvOTSiR9Hc234X3AgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="NTT Americas">
+          <p>NTT Americas</p>
+        </div>
+        <div class="slide">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.AS3C91vjSDKYPiRfc08uyQHaD3?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Allscripts">
+          <p>Allscripts</p>
+        </div>
+        <div class="slide">
+          <img src="https://th.bing.com/th/id/OIP.BXranPX8cKQV3fCiil4p5wHaCe?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Scientific Games">
+          <p>Scientific Games</p>
+        </div>
+        <!-- Duplicate starts -->
+       
+        <!-- End Duplicate -->
+      </div>
+    </div>
+  </section>
 
     <!-- Testimonial Start -->
     <div class="container-xxl pt-5">
@@ -1175,9 +1309,11 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>HeadQuarters: 
+1815 Carriage Oaks Ln,
+Katy, TX 77494</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>346-637-9669</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@slncc.com, <br>harideep.gaddam@slncc.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
