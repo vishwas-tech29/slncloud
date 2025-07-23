@@ -70,33 +70,77 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-                <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">SLN Cloud Consulting Inc</h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Careers</a>
-                        
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+     <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('d6a2bc67-9ac4-449c-ae05-5fc59b24edd9.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      margin-top: 80px;
+    }
+
+    .form-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: #4f46e5;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-primary" href="/index.html">SLN Cloud Consulting Inc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li> -->
+           <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="/project.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
     <!-- Navbar End -->
 
 
@@ -195,7 +239,7 @@
     <div class="bg">
         <div class="overlay"></div>
         <div class="content">
-            <h1 >Welcome to SLN CLOUD CONSULTING INC</h1>
+            <h1 >Welcome To <br>SLN CLOUD CONSULTING INC</h1>
             <p>
                 We are a team of passionate professionals delivering world-class Oracle and cloud consulting solutions.
                 Our mission is to help businesses innovate, scale, and succeed through digital transformation and modern enterprise technology.
@@ -215,8 +259,8 @@
                     <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
                         <img src="img/icon/icon-1.png" alt="Icon" class="img-fluid">
                     </div>
-                    <h5 class="mb-2 text-primary">PLAN, THEN DO</h5>
-                    <h6 class="mb-3">Our Services</h6>
+                    <h5 class="mb-2 text-primary">Our Services: </h5>
+                    <h6 class="mb-3">PLAN, THEN DO</h6>
                     <p class="text-muted small">We craft long-term strategies that fast-track implementation and growth. Over 90% of our business comes from referrals and returning clients.</p>
                 </div>
             </div>
@@ -227,8 +271,8 @@
                     <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
                         <img src="img/icon/icon-2.png" alt="Icon" class="img-fluid">
                     </div>
-                    <h5 class="mb-2 text-primary">SMALL TACTICS</h5>
-                    <h6 class="mb-3">Our Approach</h6>
+                    <h5 class="mb-2 text-primary">Our Approach: </h5>
+                    <h6 class="mb-3">EXECUTE, DON'T EXCUSE</h6>
                     <p class="text-muted small">We leverage strengths to overcome weaknesses with confidence and strategy. DLite believes in execution, not excuses.</p>
                 </div>
             </div>
@@ -239,7 +283,8 @@
                     <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
                         <img src="img/icon/icon-3.png" alt="Icon" class="img-fluid">
                     </div>
-                    <h5 class="mb-2 text-primary">PROOF, NOT PROMISES</h5>
+                    <h5 class="mb-2 text-primary">Our Results: </h5>
+                    <h6 class="mb-3">PROVE, THEN IMPROVE</h6>
                     <p class="text-muted small">Our success stories speak louder than claims. We deliver results through cloud-driven digital transformation and smart technologies.</p>
                 </div>
             </div>
@@ -1035,7 +1080,7 @@
 
 
     <!-- Quote Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -1098,7 +1143,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Quote Start -->
 
 
@@ -1205,7 +1250,7 @@
       width: 100%;
       height: 100px;
       object-fit: contain;
-      filter: grayscale(100%);
+      
       opacity: 0.8;
       transition: all 0.3s ease-in-out;
     }
@@ -1219,7 +1264,7 @@
     .slide p {
       margin-top: 10px;
       font-size: 14px;
-      color: #374151;
+      color: #37415100;
     }
 
     .slider-wrapper {
@@ -1230,7 +1275,7 @@
 
     @keyframes scroll {
       0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
@@ -1386,11 +1431,12 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>HeadQuarters: 
-1815 Carriage Oaks Ln,
-Katy, TX 77494</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>346-637-9669</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@slncc.com, <br>harideep.gaddam@slncc.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Head Quarters:<br>
+1815 Carriage Oaks Ln,<br>
+                    Katy, TX 77494</p>
+                
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 346-637-9669</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@slncc.com <br>harideep.gaddam@slncc.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -1414,10 +1460,7 @@ Katy, TX 77494</p>
                     <h4 class="text-white mb-4">Business Hours</h4>
                     <p class="mb-1">Monday - Friday</p>
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
+                    
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
@@ -1444,8 +1487,8 @@ Katy, TX 77494</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="#">made with love</a>
-                    Distributed By <a class="fw-medium text-light" href="">vraha solutions</a>
+                    Designed By <a class="fw-medium text-light" href="#">Vraha Solutions</a>
+
                 </div>
             </div>
         </div>

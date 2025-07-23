@@ -72,52 +72,98 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid bg-white sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-                <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">SLN Cloud Consulting Inc</h1>
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Careers</a>
-                        
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+     <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('d6a2bc67-9ac4-449c-ae05-5fc59b24edd9.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      margin-top: 80px;
+    }
+
+    .form-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: #4f46e5;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-primary" href="/index.html">SLN Cloud Consulting Inc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li> -->
+           <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+          
+          <li class="nav-item"><a class="nav-link" href="/project.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
     <!-- Navbar End -->
 
 
     <!-- Page Header Start -->
    <!-- Page Header with Background -->
-<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s"
-     style="background: url('/img/project-2.jpg') center center / cover no-repeat;">
-    <div class="overlay" ></div>
-    <div class="container text-center py-5 position-relative">
-        <h1 class="display-2 text-white mb-4 animated slideInDown">Our Services</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                <li class="breadcrumb-item"><a class="text-white-50" href="#">Pages</a></li>
-                <li class="breadcrumb-item text-primary active" aria-current="page">Services</li>
-            </ol>
+<div class="container-fluid page-header py-5 mb-5 position-relative wow fadeIn" data-wow-delay="0.1s"
+     style="background: url('/img/still-life-business-roles-with-various-mechanism-pieces.jpg') center center / cover no-repeat; height: 400px;">
+     
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" 
+         style="background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+    <!-- Content -->
+    <div class="container text-center py-5 position-relative" style="z-index: 2;">
+        <h1 class="display-2 text-white mb-3 animated slideInDown py-5">Our Services</h1>
+        <nav aria-label="breadcrumb" class="animated slideInDown">
+            
         </nav>
     </div>
 </div>
+
 
     <!-- Page Header End -->
 
@@ -436,14 +482,17 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Head Quarters:<br>
+1815 Carriage Oaks Ln,<br>
+                    Katy, TX 77494</p>
+                
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 346-637-9669</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@slncc.com <br>harideep.gaddam@slncc.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -467,14 +516,11 @@
                     <h4 class="text-white mb-4">Business Hours</h4>
                     <p class="mb-1">Monday - Friday</p>
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
+                    
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Stay updated with our latest technology insights and service offerings.</p>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative w-100">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
                             placeholder="Your email">
@@ -496,9 +542,9 @@
                     &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-                    Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-medium text-light" href="#">Vraha Solutions</a>
+
                 </div>
             </div>
         </div>
