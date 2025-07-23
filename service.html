@@ -44,28 +44,590 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-primary text-white d-none d-lg-flex">
-        <div class="container py-3">
-            <div class="d-flex align-items-center">
-                <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">GrowMark</h2>
-                </a>
-                <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
-                    <div class="ms-3 d-flex">
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+     <style>
+        /* GrowMark Services CSS */
+
+/* Root Variables */
+:root {
+    --primary: #06A3DA;
+    --secondary: #34AD54;
+    --light: #F8F9FA;
+    --dark: #14141F;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+}
+
+.back-to-top:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}
+
+/* Spinner */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Topbar */
+.topbar {
+    background: var(--primary) !important;
+}
+
+.topbar .container {
+    border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.topbar .btn-sm-square {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.topbar .btn-sm-square:hover {
+    background: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+    transition: all 0.3s;
+}
+
+.navbar.sticky-top {
+    top: -1px;
+    padding: 10px 0;
+    background: white !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 10px 0;
+    color: var(--dark);
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar .dropdown-item {
+    transition: all 0.3s;
+}
+
+.navbar .dropdown-item:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(20, 20, 31, 0.8), rgba(20, 20, 31, 0.8)), 
+                url('../img/bg-hero.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 120px 0 60px 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
+
+.breadcrumb-item a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary);
+}
+
+/* Service Section */
+.service-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.service-text {
+    background: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.service-text .btn-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--light);
+    margin: 0 auto 25px auto;
+    transition: all 0.3s;
+}
+
+.service-item:hover .service-text .btn-square {
+    background: var(--primary);
+}
+
+.service-item:hover .service-text .btn-square i {
+    color: white !important;
+}
+
+.service-text h5 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+.service-text p {
+    color: #666666;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.service-btn {
+    background: var(--light);
+    padding: 20px 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.service-item:hover .service-btn {
+    background: var(--primary);
+}
+
+.service-btn a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.service-item:hover .service-btn a {
+    color: white;
+}
+
+/* Additional Services Section */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.btn-square.bg-primary {
+    background: var(--primary) !important;
+    transition: all 0.3s;
+}
+
+.btn-square.bg-primary:hover {
+    background: var(--secondary) !important;
+    transform: scale(1.1);
+}
+
+/* Testimonial Section */
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.testimonial-item:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.testimonial-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-item h5 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.testimonial-item span {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    line-height: 1.8;
+    color: #666666;
+}
+
+/* Owl Carousel Dots */
+.owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(6, 163, 218, 0.3);
+    transition: all 0.3s;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: var(--primary);
+}
+
+/* Footer */
+.footer {
+    background: var(--dark) !important;
+}
+
+.footer .btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer .btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .btn-square {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    transition: all 0.3s;
+}
+
+.footer .btn-square:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+/* Copyright */
+.copyright {
+    background: #191C24 !important;
+}
+
+.copyright a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: var(--secondary);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    transition: 0.5s;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-light {
+    background: var(--light);
+    border-color: var(--light);
+}
+
+.btn-light:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.btn-sm-square {
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 30px;
+    border: 1px solid #E9ECEF;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(6, 163, 218, 0.25);
+}
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+    
+    .page-header {
+        padding: 100px 0 40px 0;
+    }
+    
+    .display-2 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .display-6 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-header {
+        padding: 80px 0 30px 0;
+    }
+    
+    .display-2 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
+    
+    .service-text {
+        padding: 30px 20px;
+    }
+    
+    .service-btn {
+        padding: 15px 20px;
+    }
+    
+    .testimonial-item {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .back-to-top {
+        right: 30px;
+        bottom: 30px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .display-2 {
+        font-size: 1.75rem;
+    }
+    
+    .display-5 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-square.bg-primary {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .btn-square.bg-primary i {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Utility Classes */
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-light {
+    color: var(--light) !important;
+}
+
+.text-dark {
+    color: var(--dark) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+/* WOW Animation Delays */
+.wow[data-wow-delay] {
+    animation-fill-mode: both;
+}
+
+/* Custom Spacing */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.my-6 {
+    margin-top: 6rem !important;
+    margin-bottom: 6rem !important;
+}
+     </style>
+    
     <!-- Topbar End -->
 
 
@@ -74,7 +636,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
                 <a href="index.html" class="navbar-brand d-lg-none">
-                    <h1 class="fw-bold m-0">GrowMark</h1>
+                    <h1 class="fw-bold m-0">SLN COL</h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -82,10 +644,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Services</a>
-                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="project.html" class="nav-item nav-link">carrer</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
@@ -129,19 +691,18 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-medium text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Digital Marketing Services that We Offer</h1>
+                <h1 class="display-5 mb-5">Comprehensive Technology Solutions We Offer</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item position-relative h-100">
                         <div class="service-text rounded p-5">
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                 style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
+                                <i class="fas fa-laptop-code text-primary" style="font-size: 2rem; line-height: 64px;"></i>
                             </div>
-                            <h5 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">Application Services</h5>
+                            <p class="mb-0">Custom application development, modernization, and maintenance services. We build scalable, secure applications tailored to your business needs using the latest technologies and best practices.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -149,16 +710,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item position-relative h-100">
                         <div class="service-text rounded p-5">
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                 style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
+                                <i class="fas fa-cogs text-primary" style="font-size: 2rem; line-height: 64px;"></i>
                             </div>
-                            <h5 class="mb-3">Internet Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">Implementation Services</h5>
+                            <p class="mb-0">End-to-end implementation of enterprise solutions including ERP, CRM, and business intelligence systems. Our expert team ensures smooth deployment and seamless integration with your existing infrastructure.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -166,16 +726,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item position-relative h-100">
                         <div class="service-text rounded p-5">
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                 style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-7.png" alt="Icon">
+                                <i class="fas fa-rocket text-primary" style="font-size: 2rem; line-height: 64px;"></i>
                             </div>
-                            <h5 class="mb-3">Content Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">Technology Transformation</h5>
+                            <p class="mb-0">Strategic technology transformation services including cloud migration, digital transformation, and process automation. We help modernize your technology stack to drive innovation and competitive advantage.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -183,50 +742,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="service-item position-relative h-100">
                         <div class="service-text rounded p-5">
                             <div class="btn-square bg-light rounded-circle mx-auto mb-4"
                                 style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
+                                <i class="fas fa-headset text-primary" style="font-size: 2rem; line-height: 64px;"></i>
                             </div>
-                            <h5 class="mb-3">Social Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-9.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">B2B Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
-                        </div>
-                        <div class="service-btn rounded-0 rounded-bottom">
-                            <a class="text-primary fw-medium" href="">Read More<i
-                                    class="bi bi-chevron-double-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item position-relative h-100">
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square bg-light rounded-circle mx-auto mb-4"
-                                style="width: 64px; height: 64px;">
-                                <img class="img-fluid" src="img/icon/icon-10.png" alt="Icon">
-                            </div>
-                            <h5 class="mb-3">E-mail Marketing</h4>
-                                <p class="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam
-                                    stet</p>
+                            <h5 class="mb-3">Managed Services and Support</h5>
+                            <p class="mb-0">24/7 managed IT services, infrastructure monitoring, technical support, and maintenance. Our proactive approach ensures optimal system performance, security, and minimal downtime for your critical business operations.</p>
                         </div>
                         <div class="service-btn rounded-0 rounded-bottom">
                             <a class="text-primary fw-medium" href="">Read More<i
@@ -240,6 +764,55 @@
     <!-- Service End -->
 
 
+    <!-- Additional Services Details Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h2 class="display-6 mb-5">Why Choose Our Services?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-center">
+                        <div class="btn-square bg-primary rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-award text-white" style="font-size: 2.5rem; line-height: 80px;"></i>
+                        </div>
+                        <h5>Expert Team</h5>
+                        <p>Certified professionals with extensive industry experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-center">
+                        <div class="btn-square bg-primary rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-clock text-white" style="font-size: 2.5rem; line-height: 80px;"></i>
+                        </div>
+                        <h5>24/7 Support</h5>
+                        <p>Round-the-clock support and monitoring services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-center">
+                        <div class="btn-square bg-primary rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-shield-alt text-white" style="font-size: 2.5rem; line-height: 80px;"></i>
+                        </div>
+                        <h5>Secure Solutions</h5>
+                        <p>Enterprise-grade security and compliance standards</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="text-center">
+                        <div class="btn-square bg-primary rounded-circle mx-auto mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-chart-line text-white" style="font-size: 2.5rem; line-height: 80px;"></i>
+                        </div>
+                        <h5>Scalable Growth</h5>
+                        <p>Solutions that grow and adapt with your business needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Services Details End -->
+
+
     <!-- Testimonial Start -->
     <div class="container-xxl pt-5">
         <div class="container">
@@ -251,31 +824,27 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-1.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
+                    <p class="mb-4">GrowMark's application services transformed our business operations. Their team delivered a custom solution that exceeded our expectations and improved our efficiency by 40%.</p>
+                    <h5>Sarah Johnson</h5>
+                    <span class="text-primary">IT Director</span>
                 </div>
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-2.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
+                    <p class="mb-4">The implementation services were flawless. They migrated our entire infrastructure to the cloud with zero downtime. Truly professional and reliable.</p>
+                    <h5>Michael Chen</h5>
+                    <span class="text-primary">CTO</span>
                 </div>
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-3.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
+                    <p class="mb-4">Their managed services have been a game-changer for us. 24/7 support and proactive monitoring gave us peace of mind to focus on our core business.</p>
+                    <h5>Emily Rodriguez</h5>
+                    <span class="text-primary">Operations Manager</span>
                 </div>
                 <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
                     <img class="mb-4" src="img/testimonial-4.jpg" alt="">
-                    <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et
-                        sit, sed stet lorem sit clita duo justo</p>
-                    <h5>Client Name</h5>
-                    <span class="text-primary">Profession</span>
+                    <p class="mb-4">The technology transformation project completely modernized our systems. We're now more agile and competitive in the market.</p>
+                    <h5>David Thompson</h5>
+                    <span class="text-primary">CEO</span>
                 </div>
             </div>
         </div>
@@ -322,7 +891,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>Stay updated with our latest technology insights and service offerings.</p>
                     <div class="position-relative w-100">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
                             placeholder="Your email">
@@ -344,7 +913,7 @@
                     &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
                     Distributed By <a class="fw-medium text-light" href="https://themewagon.com">ThemeWagon</a>
                 </div>
