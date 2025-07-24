@@ -1,1447 +1,1340 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>SLN CLOUD CONSULTING</title>
+    <title>SLN CLOUD CONSULTING - Oracle Cloud Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Oracle Cloud, ERP, HCM, Cloud Consulting, Digital Transformation" name="keywords">
+    <meta content="Leading Oracle Cloud consulting firm delivering enterprise solutions and digital transformation services" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-primary text-white d-none d-lg-flex">
-        <div class="container py-3">
-            <div class="d-flex align-items-center">
-                <a href="index.html">
-                    <h2 class="text-white fw-bold m-0">SLN CLOUD CONSULTING INC</h2>
-                </a>
-                <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
-                    <div class="ms-3 d-flex">
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-sm-square btn-light text-primary rounded-circle ms-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-     <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('d6a2bc67-9ac4-449c-ae05-5fc59b24edd9.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 28px;
-    }
-
-    .navbar {
-      background: rgb(255, 255, 255);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-container {
-      background-color:white;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-      margin-top: 80px;
-    }
-
-    .form-title {
-      font-size: 32px;
-      font-weight: 600;
-      color: #1f2937;
-    }
-
-    label {
-      font-weight: 500;
-    }
-
-    .btn-primary {
-      background-color: #4f46e5;
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #4338ca;
-    }
-    /* Navbar entrance animation */
-.animated-navbar {
-  animation: slideFadeIn 1.2s ease forwards;
-  opacity: 0;
-}
-
-@keyframes slideFadeIn {
-  from {
-    transform: translateY(-30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Logo and brand styling */
-.brand-text {
-  color: #1f2937;
-  line-height: 1.2;
-}
-
-.brand-text .tagline {
-  font-size: 12px;
-  color: #6b7280;
-  font-weight: 400;
-}
-
-/* Navbar links animation */
-.nav-link {
-  position: relative;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.animated-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  width: 100%;
-  height: 2px;
-  background-color: #2563eb;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.animated-link:hover {
-  color: #2563eb;
-}
-
-.animated-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-  </style>
-</head>
-<body>
-
-  <!-- Navbar -->
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top animated-navbar">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="/index.html">
-      <img src="/img/SLN Logo_1.png" alt="Logo" width="90" height="100" style="margin-right: 10px;">
-      <div class="brand-text">
-        <strong>SLN CLOUD CONSULTING INC</strong>
-        <span class="tagline d-block">WHERE STRATEGY MEETS Execution</span>
-      </div>
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link animated-link" href="/service.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link animated-link" href="/about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link animated-link" href="/project.html">Careers</a></li>
-        <li class="nav-item"><a class="nav-link animated-link" href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
     <style>
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #3b82f6;
+            --accent-color: #06b6d4;
+            --dark-color: #0f172a;
+            --light-color: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-hero: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #06b6d4 100%);
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-       
-
-        .bg {
-            background-image: url('/img/carousel-1.jpg'); /* Replace with your image */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            width: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 1;
-        }
-
-        .content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: #ffffff;
-            padding: 20px;
-            max-width: 800px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .content h1 {
-            font-size: 3rem;
-            color: #ffffff;
-            margin-bottom: 20px;
-            animation: slideDown 1.5s ease-in-out, glow 2s infinite alternate;
-        }
-
-        .content p {
-            font-size: 1.2rem;
+        body {
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            animation: slideUp 2s ease-in-out;
+            color: var(--text-dark);
+            overflow-x: hidden;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-            }
-            to {
-                text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .content h1 {
-                font-size: 2rem;
-            }
-
-            .content p {
-                font-size: 1rem;
-            }
-        }
-    </style>
-
-    <div class="bg">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1 >Welcome To <br>SLN CLOUD CONSULTING INC</h1>
-            <p>
-                We are a team of passionate professionals delivering world-class Oracle and cloud consulting solutions.
-                Our mission is to help businesses innovate, scale, and succeed through digital transformation and modern enterprise technology.
-            </p>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-
-   <div class="container-xxl py-5 bg-white">
-    <div class="container">
-        <div class="row g-4 justify-content-center">
-
-            <!-- Feature 1 -->
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                <div class="feature-item shadow-sm h-100 text-center p-4 border rounded-4 transition-hover">
-                    <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
-                        <img src="img/icon/icon-1.png" alt="Icon" class="img-fluid">
-                    </div>
-                    <h5 class="mb-2 text-primary">Our Services </h5>
-                    <h6 class="mb-3">PLAN, THEN DO</h6>
-                    <p class="text-muted small">We craft long-term strategies that fast-track implementation and growth. Over 90% of our business comes from referrals and returning clients.</p>
-                </div>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-item shadow-sm h-100 text-center p-4 border rounded-4 transition-hover">
-                    <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
-                        <img src="img/icon/icon-2.png" alt="Icon" class="img-fluid">
-                    </div>
-                    <h5 class="mb-2 text-primary">Our Approach </h5>
-                    <h6 class="mb-3">EXECUTE, DON'T EXCUSE</h6>
-                    <p class="text-muted small">We leverage strengths to overcome weaknesses with confidence and strategy. DLite believes in execution, not excuses.</p>
-                </div>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-item shadow-sm h-100 text-center p-4 border rounded-4 transition-hover">
-                    <div class="btn-square bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 64px; height: 64px;">
-                        <img src="img/icon/icon-3.png" alt="Icon" class="img-fluid">
-                    </div>
-                    <h5 class="mb-2 text-primary fs-5">Our Results </h5>
-                    <h6 class="mb-3 fs-15">PROVE, THEN IMPROVE</h6>
-                    <p class="text-muted small">Our success stories speak louder than claims. We deliver results through cloud-driven digital transformation and smart technologies.</p>
-                </div>
-            </div>
-
-            <!-- Add more features here if needed -->
-
-        </div>
-    </div>
-</div>
-<!-- Features Section End -->
-
-<!-- AOS Init Script (Place before </body>) -->
-<script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-    });
-</script>
-
-<!-- Extra CSS (for hover and spacing) -->
-<style>
-
-    .transition-hover {
-        transition: all 0.3s ease;
-    }
-    .transition-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-    }
-</style>
-    <!-- Features End -->
-
-
-    <!-- About Start -->
-   
-    <!-- About End -->
-
-
-    <!-- Video Modal Start -->
-    
-    <!-- Video Modal End -->
-
-
-    <!-- Service Start -->
-    
-  <style>
-    :root {
-        --primary: #2563eb;
-        --accent: #4f46e5;
-        --success: #10b981;
-        --text-primary: #1f2937;
-        --text-secondary: #6b7280;
-        --bg-light: #f9fafb;
-        --bg-white: #fff;
-        --border: #e5e7eb;
-        --shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-        background: var(--bg-light);
-    }
-
-    .services-section {
-        padding: 80px 20px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .services-section .container {
-        max-width: 1200px;
-        margin: auto;
-        position: relative;
-        z-index: 1;
-    }
-
-    .section-header {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .section-header h2 {
-        font-size: 2.8rem;
-        font-weight: 800;
-        background: linear-gradient(to right, var(--primary), var(--accent));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: fadeInDown 1s ease forwards;
-    }
-
-    .section-header p {
-        color: var(--text-secondary);
-        font-size: 1.1rem;
-        max-width: 600px;
-        margin: 1rem auto 0;
-        animation: fadeIn 1.5s ease forwards;
-    }
-
-    .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-
-    .service-card {
-        background: var(--bg-white);
-        padding: 2rem;
-        border-radius: 1.5rem;
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-        transition: 0.3s ease;
-        position: relative;
-        animation: fadeUp 1.2s ease forwards;
-    }
-
-    .service-card:hover {
-        transform: translateY(-10px);
-        border-color: var(--primary);
-    }
-
-    .card-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    .card-icon {
-        background: linear-gradient(to right, var(--primary), var(--accent));
-        color: white;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 12px;
-        margin-right: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .card-title {
-        font-size: 1.3rem;
-        font-weight: 600;
-    }
-
-    .card-description {
-        font-size: 0.95rem;
-        color: var(--text-secondary);
-        margin-bottom: 1rem;
-    }
-
-    .card-features {
-        list-style: none;
-        padding-left: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .card-features li {
-        margin-bottom: 0.5rem;
-        position: relative;
-        color: var(--text-secondary);
-    }
-
-    .card-features li::before {
-        content: '\f00c';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        color: var(--success);
-        position: absolute;
-        left: -1rem;
-    }
-
-    .learn-more {
-        display: inline-block;
-        padding: 0.6rem 1.2rem;
-        background: linear-gradient(to right, var(--primary), var(--accent));
-        color: white;
-        border: none;
-        border-radius: 0.75rem;
-        cursor: pointer;
-        font-weight: 600;
-        text-align: center;
-        transition: transform 0.2s;
-    }
-
-    .learn-more:hover {
-        transform: translateY(-2px);
-    }
-
-    /* Animations */
-    @keyframes fadeUp {
-        0% {
-            opacity: 0;
-            transform: translateY(40px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    @keyframes fadeInDown {
-        0% {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .section-header h2 {
-            font-size: 2rem;
-        }
-    }
-</style>
-
-<!-- Services Section HTML -->
-<section class="services-section">
-    <div class="container">
-        <div class="section-header">
-            <h2>Where Can We Help You</h2>
-            <p>Cutting-edge Oracle Cloud solutions tailored to accelerate your digital transformation and long-term success.</p>
-        </div>
-        <div class="cards-grid">
-            <!-- Card 1: Oracle Cloud Implementations -->
-            <div class="service-card">
-                <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <h3 class="card-title">Oracle Cloud Implementations</h3>
-                </div>
-                <p class="card-description">End-to-end Oracle Cloud (ERP, HCM, SCM, CX) implementations for seamless business process alignment.</p>
-                <ul class="card-features">
-                    <li>Oracle Cloud ERP, HCM, SCM</li>
-                    <li>Business Process Optimization</li>
-                    <li>Data Migration & Validation</li>
-                    <li>Post-Go-Live Hypercare</li>
-                </ul>
-                <button class="learn-more">Learn More</button>
-            </div>
-
-            <!-- Card 2: Managed Services -->
-            <div class="service-card">
-                <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-tools"></i></div>
-                    <h3 class="card-title">Managed Services & Support</h3>
-                </div>
-                <p class="card-description">Reliable managed services with functional, technical, and SLA-driven Oracle application support.</p>
-                <ul class="card-features">
-                    <li>24/7 Monitoring & Support</li>
-                    <li>Patch Management & Testing</li>
-                    <li>Performance Tuning</li>
-                    <li>SLA-Based Resolution</li>
-                </ul>
-                <button class="learn-more">Learn More</button>
-            </div>
-
-            <!-- Card 3: OCI Services -->
-            <div class="service-card">
-                <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-server"></i></div>
-                    <h3 class="card-title">Cloud Infrastructure (OCI)</h3>
-                </div>
-                <p class="card-description">Design, migrate, and manage secure Oracle Cloud Infrastructure tailored for performance & compliance.</p>
-                <ul class="card-features">
-                    <li>OCI Architecture & Design</li>
-                    <li>Infrastructure Migration</li>
-                    <li>Security & Governance</li>
-                    <li>Cost Optimization</li>
-                </ul>
-                <button class="learn-more">Learn More</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- Service End -->
-
-
-    <!-- Project Start -->
-   <style>
-        :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
-            --text-light: #e2e8f0;
-            --text-dark: #334155;
-            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --gradient-tertiary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-
+        /* Smooth Scrolling */
         html {
             scroll-behavior: smooth;
         }
 
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #0f172a;
-            color: var(--text-light);
+        /* Loading Spinner */
+        .loading-spinner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
         }
 
-        .about-section {
-            position: relative;
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Professional Navigation */
+       #navbar {
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+    }
+
+    #navbar .nav-link {
+        color: #333;
+        font-weight: 500;
+        margin-left: 20px;
+        transition: 0.3s;
+    }
+
+    #navbar .nav-link:hover {
+        color: #2563eb;
+    }
+
+    #navbar .navbar-brand img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    #navbar .navbar-brand div {
+        line-height: 1.2;
+    }
+
+    /* Sticky shadow on scroll */
+    .scrolled {
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        /* Hero Section */
+        .hero-section {
             min-height: 100vh;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-            overflow: hidden;
+            background: var(--gradient-hero);
             display: flex;
             align-items: center;
-            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
         }
 
-        .bg-animation {
+        .hero-bg-elements {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             z-index: 1;
         }
 
-        .floating-orb {
+        .hero-shape {
             position: absolute;
-            border-radius: 50%;
-            opacity: 0.6;
-            filter: blur(1px);
-            animation: float-complex 20s infinite ease-in-out;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
         }
 
-        .orb-1 {
-            width: 300px;
-            height: 300px;
-            background: var(--gradient-primary);
+        .hero-shape:nth-child(1) {
             top: 10%;
-            left: -5%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
             animation-delay: 0s;
         }
 
-        .orb-2 {
-            width: 200px;
-            height: 200px;
-            background: var(--gradient-secondary);
-            bottom: 20%;
-            right: -3%;
-            animation-delay: 7s;
-        }
-
-        .orb-3 {
+        .hero-shape:nth-child(2) {
+            top: 70%;
+            right: 15%;
             width: 150px;
             height: 150px;
-            background: var(--gradient-tertiary);
-            top: 60%;
-            left: 15%;
-            animation-delay: 14s;
+            background: white;
+            transform: rotate(45deg);
+            animation-delay: 2s;
         }
 
-        @keyframes float-complex {
-            0%, 100% { transform: translateY(0) translateX(0) rotate(0deg) scale(1); }
-            25% { transform: translateY(-30px) translateX(20px) rotate(90deg) scale(1.1); }
-            50% { transform: translateY(-60px) translateX(-10px) rotate(180deg) scale(0.9); }
-            75% { transform: translateY(-20px) translateX(30px) rotate(270deg) scale(1.05); }
+        .hero-shape:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            width: 80px;
+            height: 80px;
+            background: white;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation-delay: 4s;
         }
 
-        .glass-container {
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .hero-content {
             position: relative;
             z-index: 2;
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(15px);
-            border-radius: 24px;
-            padding: 60px 40px;
-            max-width: 1000px;
-            margin: auto;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            animation: fadeInUp 1s ease-out 0.2s forwards;
-            opacity: 0;
-            transform: translateY(50px);
+            color: white;
+            text-align: center;
         }
 
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .section-title {
-            font-size: 3rem;
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
-            background: linear-gradient(to right, #fff, #cbd5e1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .section-description p {
-            font-size: 1.1rem;
-            line-height: 1.7;
             margin-bottom: 1.5rem;
-            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.2;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
 
-        .partner-badge {
-            display: inline-block;
-            padding: 0.4rem 1rem;
-            background: rgba(59, 130, 246, 0.15);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn-primary-custom {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 0.875rem 2rem;
             border-radius: 50px;
-            color: #3b82f6;
             font-weight: 600;
-            margin: 0.25rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             transition: all 0.3s ease;
-            cursor: pointer;
+            box-shadow: var(--shadow-lg);
         }
 
-        .partner-badge:hover {
-            background: rgba(59, 130, 246, 0.3);
+        .btn-primary-custom:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            box-shadow: var(--shadow-xl);
+            color: var(--primary-color);
         }
 
-        .value-cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+        .btn-secondary-custom {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
         }
 
-        .value-card {
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 2rem;
+        .btn-secondary-custom:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 5rem 0;
+            background: var(--light-color);
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
             text-align: center;
-            color: var(--text-dark);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transform: translateY(50px);
-            opacity: 0;
-            transition: all 0.5s ease;
         }
 
-        .value-card.visible {
-            transform: translateY(0);
-            opacity: 1;
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
         }
 
-        .card-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 1rem;
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 15px;
+            margin: 0 auto 1.5rem;
             font-size: 2rem;
             color: white;
         }
 
-        .card-icon.consistency { background: var(--gradient-primary); }
-        .card-icon.evolution { background: var(--gradient-secondary); }
-        .card-icon.success { background: var(--gradient-tertiary); }
-
-        .card-title {
+        .feature-title {
+            font-family: 'Poppins', sans-serif;
             font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .feature-subtitle {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .feature-text {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .service-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .service-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            color: #10b981;
             font-weight: bold;
-            margin: 0.5rem 0;
+            width: 20px;
+            text-align: center;
         }
 
-        .card-description {
-            color: #64748b;
-            font-size: 1rem;
+        .learn-more-btn {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
         }
 
+        .learn-more-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            color: white;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--dark-color) 0%, #1e293b 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="white"/><circle cx="80" cy="40" r="1" fill="white"/><circle cx="40" cy="80" r="1" fill="white"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+        }
+
+        .about-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .value-cards {
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        .value-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-text {
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        /* Clients Section */
+        .clients-section {
+            padding: 4rem 0;
+            background: var(--light-color);
+        }
+
+        .clients-title {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 3rem;
+        }
+
+        .clients-slider {
+            overflow: hidden;
+            padding: 1rem 0;
+        }
+
+        .clients-track {
+            display: flex;
+            animation: slide 30s linear infinite;
+            width: calc(250px * 12);
+        }
+
+        .client-item {
+            flex: 0 0 200px;
+            text-align: center;
+            margin: 0 25px;
+        }
+
+        .client-logo {
+            width: 120px;
+            height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .client-name {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 6)); }
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .testimonial-card {
+            background: var(--light-color);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            color: var(--text-light);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-section {
+            margin-bottom: 2rem;
+        }
+
+        .footer-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .section-title { font-size: 2rem; }
-            .glass-container { padding: 30px 20px; }
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            
+            .feature-card,
+            .service-card {
+                margin-bottom: 2rem;
+            }
+            
+            .clients-track {
+                animation-duration: 20s;
+            }
+        }
+
+        /* Utility Classes */
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
+
 <body>
-    <section class="about-section">
-        <!-- Background Orbs -->
-        <div class="bg-animation">
-            <div class="floating-orb orb-1"></div>
-            <div class="floating-orb orb-2"></div>
-            <div class="floating-orb orb-3"></div>
-        </div>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
 
-        <!-- Main Content -->
-        <div class="glass-container">
-            <h1 class="section-title">Who We Are</h1>
-
-            <div class="section-description">
-                <p><strong>SLN Cloud Consulting Inc.</strong> is a specialized Oracle consulting firm delivering high-impact, client-first cloud solutions across Oracle Cloud Applications, E-Business Suite, and OCI.</p>
-
-                <p>Founded by industry veterans with decades of experience, we believe technology should serve the business—never the other way around. Our Oracle-certified consultants are trusted advisors in complex enterprise environments.</p>
-
-                <p>We serve clients in <strong>Public Sector</strong>, <strong>Healthcare</strong>, <strong>Energy</strong>, <strong>Education</strong>, and <strong>Financial Services</strong> with full lifecycle services: strategy, implementation, and optimization.</p>
-
-                <p>From planning to post-go-live support, we commit to delivering transformation outcomes that are technically sound, strategically aligned, and built for long-term success.</p>
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#hero">
+            <img src="/img/SLN Logo_1.png" alt="">
+            <div>
+                <div style="font-size: 1.2rem; font-weight: 700; line-height: 1;">SLN Cloud Consulting</div>
+                <div style="font-size: 0.75rem; color: var(--text-light); font-weight: 400;">Where Strategy Meets Execution</div>
             </div>
+        </a>
 
-            <!-- Value Cards -->
-            <div class="value-cards-grid">
-                <div class="value-card">
-                    <div class="card-icon consistency"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <h3 class="card-title">Oracle Cloud Experts</h3>
-                    <p class="card-description">
-                        Certified in ERP, HCM, SCM, EBS, and OCI—we deliver high-performing cloud solutions tailored to your needs.
-                    </p>
-                </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars"></i>
+        </button>
 
-                <div class="value-card">
-                    <div class="card-icon evolution"><i class="fas fa-cogs"></i></div>
-                    <h3 class="card-title">On-Time, On-Budget Delivery</h3>
-                    <p class="card-description">
-                        Our proven execution frameworks deliver results fast, efficiently, and within your budget.
-                    </p>
-                </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/clients.html">Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-                <div class="value-card">
-                    <div class="card-icon success"><i class="fas fa-users"></i></div>
-                    <h3 class="card-title">Client-First Culture</h3>
-                    <p class="card-description">
-                        We succeed when you do—building long-term partnerships around your goals and growth.
-                    </p>
+<!-- Scroll effect for sticky nav shadow -->
+<script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 30) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-elements">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    Transform Your Business with
+                    <span class="d-block">Oracle Cloud Excellence</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We are a specialized Oracle consulting firm delivering world-class cloud solutions, 
+                    digital transformation, and enterprise technology services that drive innovation and accelerate growth.
+                </p>
+                <div class="hero-cta">
+                    <a href="#services" class="btn-primary-custom">
+                        <i class="fas fa-rocket"></i>
+                        Explore Services
+                    </a>
+                    <a href="#contact" class="btn-secondary-custom">
+                        <i class="fas fa-phone"></i>
+                        Get Consultation
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-        // Reveal value cards on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.value-card').forEach(card => {
-            observer.observe(card);
-        });
-
-        // Parallax orbs on scroll
-        let ticking = false;
-        function updateParallax() {
-            const scrolled = window.pageYOffset;
-            document.querySelectorAll('.floating-orb').forEach((orb, i) => {
-                const speed = (i + 1) * 0.3;
-                orb.style.transform = `translateY(${scrolled * speed * -0.2}px)`;
-            });
-            ticking = false;
-        }
-
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                window.requestAnimationFrame(updateParallax);
-                ticking = true;
-            }
-        });
-    </script>
-    <!-- Project End -->
-
-
-    <!-- Quote Start -->
-    <!-- <div class="container-xxl py-5">
+    <!-- Features Section -->
+    <section class="features-section" id="features">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
-                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-                        erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
-                        <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </span>
-                        <span class="fs-5 fw-medium mx-4">+012 345 6789</span>
-                    </a>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="feature-title">Our Services</h3>
+                        <div class="feature-subtitle">PLAN, THEN DO</div>
+                        <p class="feature-text">
+                            We craft long-term strategies that fast-track implementation and growth. 
+                            Over 90% of our business comes from referrals and returning clients.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
+                        <h3 class="feature-title">Our Approach</h3>
+                        <div class="feature-subtitle">EXECUTE, DON'T EXCUSE</div>
+                        <p class="feature-text">
+                            We leverage strengths to overcome weaknesses with confidence and strategy. 
+                            We believe in execution, not excuses.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Digital Marketing</option>
-                                    <option value="">Social Marketing</option>
-                                    <option value="">Content Marketing</option>
-                                    <option value="">E-mail Marketing</option>
-                                </select>
-                                <label for="service">Choose A Service</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
+                        <h3 class="feature-title">Our Results</h3>
+                        <div class="feature-subtitle">PROVE, THEN IMPROVE</div>
+                        <p class="feature-text">
+                            Our success stories speak louder than claims. We deliver results through 
+                            cloud-driven digital transformation and smart technologies.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Quote Start -->
+    </section>
 
-
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-5">
+    <!-- Services Section -->
+    <section class="services-section" id="services">
         <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Where Can We Help You</h2>
+                <p class="section-subtitle">
+                    Cutting-edge Oracle Cloud solutions tailored to accelerate your digital transformation and long-term success.
+                </p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Alex Robin</h5>
-                        <span class="text-primary">Founder & CEO</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h3 class="service-title">Oracle Cloud Implementations</h3>
+                        <p class="service-description">
+                            End-to-end Oracle Cloud (ERP, HCM, SCM, CX) implementations for seamless business process alignment.
+                        </p>
+                        <ul class="service-features">
+                            <li>Oracle Cloud ERP, HCM, SCM</li>
+                            <li>Business Process Optimization</li>
+                            <li>Data Migration & Validation</li>
+                            <li>Post-Go-Live Hypercare</li>
                         </ul>
+                        <a href="#contact" class="learn-more-btn">Learn More</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Adam Crew</h5>
-                        <span class="text-primary">Co Founder</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title">Managed Services & Support</h3>
+                        <p class="service-description">
+                            Reliable managed services with functional, technical, and SLA-driven Oracle application support.
+                        </p>
+                        <ul class="service-features">
+                            <li>24/7 Monitoring & Support</li>
+                            <li>Patch Management & Testing</li>
+                            <li>Performance Tuning</li>
+                            <li>SLA-Based Resolution</li>
                         </ul>
+                        <a href="#contact" class="learn-more-btn">Learn More</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Boris Johnson</h5>
-                        <span class="text-primary">Executive Manager</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Infrastructure (OCI)</h3>
+                        <p class="service-description">
+                            Design, migrate, and manage secure Oracle Cloud Infrastructure tailored for performance & compliance.
+                        </p>
+                        <ul class="service-features">
+                            <li>OCI Architecture & Design</li>
+                            <li>Infrastructure Migration</li>
+                            <li>Security & Governance</li>
+                            <li>Cost Optimization</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/team-4.jpg" alt="">
-                        <h5>Robert Jordan</h5>
-                        <span class="text-primary">Digital Marketer</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+                        <a href="#contact" class="learn-more-btn">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <!-- Team End -->
- <style>
-    body {
-      margin: 0;
-      background: #f3f4f6;
-      font-family: "Segoe UI", sans-serif;
-    }
+    </section>
 
-    .slider-section {
-      background-color: #ffffff;
-      padding: 40px 0;
-      overflow: hidden;
-    }
-
-    .slider-title {
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 30px;
-      color: #1f2937;
-    }
-
-    .slider-container {
-      display: flex;
-      animation: scroll 40s linear infinite;
-      width: max-content;
-    }
-
-    .slide {
-      flex: 0 0 auto;
-      width: 180px;
-      margin: 0 25px;
-      text-align: center;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 100px;
-      object-fit: contain;
-      
-      opacity: 0.8;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .slide:hover img {
-      filter: grayscale(0%);
-      transform: scale(1.05);
-      opacity: 1;
-    }
-
-    .slide p {
-      margin-top: 10px;
-      font-size: 14px;
-      color: #37415100;
-    }
-
-    .slider-wrapper {
-      display: flex;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
-</head>
-<body>
-
-  <section class="slider-section">
-    <div class="slider-title">Our Trusted Clients</div>
-    <div class="slider-wrapper">
-      <div class="slider-container">
-        <!-- Repeat all logos twice for smooth scrolling -->
-
-        <!-- Client Logos with Names -->
-        <div class="slide">
-          <img src="https://th.bing.com/th/id/OIP.FJDFuG9_6cu-dR2uLa8BAQHaDD?w=318&h=144&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="UL LLC">
-          <p>UL LLC</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse4.mm.bing.net/th/id/OIP.XlrdMLRU4-ChL0cyg6MT9AHaD4?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Brookdale">
-          <p>Brookdale</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/City_of_Philadelphia_Logo.svg" alt="City of Philadelphia">
-          <p>City of Philadelphia</p>
-        </div>
-        <div class="slide">
-          <img src="https://th.bing.com/th/id/R.9c34339b73e52a6909fcecaebd756ecc?rik=q%2bn5TCiev%2f05fQ&riu=http%3a%2f%2fgoldlink.etsu.edu%2fsites%2fall%2fcustom%2fimages%2fetsulogo.png&ehk=vr9DZhdTFsa37qWWCU%2bKHi6u185mXXSxWiFfAO1LmRM%3d&risl=&pid=ImgRaw&r=0" alt="ETSU">
-          <p>ETSU</p>
-        </div>
-        <div class="slide">
-          <img src="https://www.decodedmagazine.com/wp-content/uploads/2021/04/TAOGROUP-LOGO-Social-Icon.png" alt="TAO Group">
-          <p>TAO Group</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse4.mm.bing.net/th/id/OIP.v8Ax9IW84z0Bh3URJz11tQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Akamai">
-          <p>Akamai Technologies</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse2.mm.bing.net/th/id/OIP.0eGWlH14azsdvDRmNwEJ3AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="City of Las Vegas">
-          <p>City of Las Vegas</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse3.mm.bing.net/th/id/OIP.WaQnjfAJCthev-Lh9AFMQwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Forward Air">
-          <p>Forward Air</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse4.mm.bing.net/th/id/OIP.VLvMWzPOPcn4a-1EYNXpYQHaBg?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Barrick Gold">
-          <p>Barrick Gold</p>
-        </div>
-        <div class="slide">
-          <img src="https://th.bing.com/th/id/OIP.XRSJIFMVeCYRguMPLh-VYQHaEq?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="TJX Companies">
-          <p>TJX Companies Inc</p>
-        </div>
-        <div class="slide">
-          <img src="https://companieslogo.com/img/orig/AMC_BIG-2d4d2027.png?t=1674020115" alt="AMC">
-          <p>AMC Entertainments</p>
-        </div>
-        <div class="slide">
-          <img src="https://cdn.phenompeople.com/CareerConnectResources/KIVKBRUS/images/KBR_Logo_Registered_RGB-1667840270257.png" alt="KBR">
-          <p>KBR Constructions</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse3.mm.bing.net/th/id/OIP.tj3cWdvOTSiR9Hc234X3AgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="NTT Americas">
-          <p>NTT Americas</p>
-        </div>
-        <div class="slide">
-          <img src="https://tse1.mm.bing.net/th/id/OIP.AS3C91vjSDKYPiRfc08uyQHaD3?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Allscripts">
-          <p>Allscripts</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Scientific_Games_logo.svg" alt="Scientific Games">
-          <p>Scientific Games</p>
-        </div>
-        <!-- Duplicate starts -->
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/UL_logo_2012.svg" alt="UL LLC">
-          <p>UL LLC</p>
-        </div>
-        <div class="slide">
-          <img src="https://seeklogo.com/images/B/Brookdale-Senior-Living-logo-489A72BA4D-seeklogo.com.png" alt="Brookdale">
-          <p>Brookdale</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/City_of_Philadelphia_Logo.svg" alt="City of Philadelphia">
-          <p>City of Philadelphia</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Tao_Group_Hospitality_Logo.png" alt="TAO Group">
-          <p>TAO Group</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/City_of_Las_Vegas_seal.svg" alt="City of Las Vegas">
-          <p>City of Las Vegas</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/en/b/b3/AMC_Theatres_2022_logo.svg" alt="AMC">
-          <p>AMC Entertainments</p>
-        </div>
-        <div class="slide">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/KBR_Logo.svg" alt="KBR">
-          <p>KBR Constructions</p>
-        </div>
-        <!-- End Duplicate -->
-      </div>
-    </div>
-  </section>
-
-    <!-- Testimonial Start -->
-    <!-- Include Animate.css for CSS animations -->
-     <style>
-        .testimonial-item {
-    background-color: #f9f9ff;
-    color: #1f1f1f;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.testimonial-item:hover {
-    transform: translateY(-5px);
-}
-.testimonial-item h5 {
-    font-weight: 700;
-    margin-top: 15px;
-}
-.testimonial-item span {
-    color: #007bff;
-    font-weight: 500;
-}
-
-     </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-<!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-
-<div class="container-xxl pt-5">
-    <div class="container">
-        <div class="text-center text-md-start pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <p class="fs-5 fw-medium text-primary">Testimonials</p>
-            <h1 class="display-5 mb-4 animate__animated animate__fadeInDown">What Our Clients Say</h1>
-        </div>
-
-        <div class="owl-carousel testimonial-carousel owl-theme wow fadeInUp" data-wow-delay="0.2s">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5 bg-light shadow animate__animated animate__fadeInUp">
-                <img class="mb-3 rounded-circle shadow" src="/img/WhatsApp Image 2025-07-23 at 4.43.06 PM.jpeg" alt="" style="width: 80px; height: 80px;">
-                <p class="mb-4">SLN Cloud Consulting Inc. is a highly professional and knowledgeable Oracle HCM partner. They played a critical role in the City of Philadelphia’s Oracle implementation initiative.</p>
-                <h5>Prachi Sathe</h5>
-                <span class="text-primary">Director, City of Philadelphia</span>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5 bg-light shadow animate__animated animate__zoomIn">
-                <img class="mb-3 rounded-circle shadow" src="img/testimonial-2.jpg" alt="" style="width: 80px; height: 80px;">
-                <p class="mb-4">Working with SLN Cloud was a game-changer for our organization. Their in-depth understanding of Oracle solutions helped streamline our processes significantly.</p>
-                <h5>Anita Mehra</h5>
-                <span class="text-primary">IT Manager, UL LLC</span>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5 bg-light shadow animate__animated animate__fadeInRight">
-                <img class="mb-3 rounded-circle shadow" src="img/testimonial-3.jpg" alt="" style="width: 80px; height: 80px;">
-                <p class="mb-4">The SLN Cloud team brought both innovation and professionalism. Their ability to adapt Oracle HCM to our business needs was outstanding.</p>
-                <h5>Michael Rodriguez</h5>
-                <span class="text-primary">HR Director, Brookdale</span>
-            </div>
-
-            <!-- Testimonial 4 -->
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5 bg-light shadow animate__animated animate__fadeInLeft">
-                <img class="mb-3 rounded-circle shadow" src="img/testimonial-4.jpg" alt="" style="width: 80px; height: 80px;">
-                <p class="mb-4">From planning to deployment, SLN Cloud Consulting ensured our Oracle transition was smooth and impactful. Highly recommended.</p>
-                <h5>Susan Lim</h5>
-                <span class="text-primary">CIO, Forward Air</span>
-            </div>
-
-            <!-- Testimonial 5 -->
-            <div class="testimonial-item rounded p-4 p-lg-5 mb-5 bg-light shadow animate__animated animate__bounceIn">
-                <img class="mb-3 rounded-circle shadow" src="img/testimonial-5.jpg" alt="" style="width: 80px; height: 80px;">
-                <p class="mb-4">Excellent consultants with great communication and technical skills. They understood our unique requirements and delivered beyond expectations.</p>
-                <h5>Ravi Kumar</h5>
-                <span class="text-primary">VP IT, TAO Group</span>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-bg"></div>
+        <div class="container">
+            <div class="about-content" data-aos="fade-up">
+                <h2 class="about-title">Who We Are</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <p class="about-text">
+                            <strong>SLN Cloud Consulting Inc.</strong> is a specialized Oracle consulting firm delivering high-impact, 
+                            client-first cloud solutions across Oracle Cloud Applications, E-Business Suite, and OCI.
+                        </p>
+                        <p class="about-text">
+                            Founded by industry veterans with decades of experience, we believe technology should serve the business—never 
+                            the other way around. Our Oracle-certified consultants are trusted advisors in complex enterprise environments.
+                        </p>
+                        <p class="about-text">
+                            We serve clients in <strong>Public Sector</strong>, <strong>Healthcare</strong>, <strong>Energy</strong>, 
+                            <strong>Education</strong>, and <strong>Financial Services</strong> with full lifecycle services: strategy, 
+                            implementation, and optimization.
+                        </p>
+                        <p class="about-text">
+                            From planning to post-go-live support, we commit to delivering transformation outcomes that are technically 
+                            sound, strategically aligned, and built for long-term success.
+                        </p>
+                    </div>
+                </div>
+                <div class="row value-cards g-4 mt-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h4 class="value-title">Oracle Cloud Experts</h4>
+                            <p class="value-text">
+                                Certified in ERP, HCM, SCM, EBS, and OCI—we deliver high-performing cloud solutions tailored to your needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4 class="value-title">On-Time, On-Budget Delivery</h4>
+                            <p class="value-text">
+                                Our proven execution frameworks deliver results fast, efficiently, and within your budget.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4 class="value-title">Client-First Culture</h4>
+                            <p class="value-text">
+                                We succeed when you do—building long-term partnerships around your goals and growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Owl Carousel JS & jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Clients Section -->
+    <section class="clients-section" id="clients">
+        <div class="container">
+            <h2 class="clients-title" data-aos="fade-up">Our Trusted Clients</h2>
+            <div class="clients-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="clients-track">
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">UL LLC</div>
+                        <div class="client-name">UL LLC</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">Brookdale</div>
+                        <div class="client-name">Brookdale</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">Philadelphia</div>
+                        <div class="client-name">City of Philadelphia</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">ETSU</div>
+                        <div class="client-name">ETSU</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">TAO Group</div>
+                        <div class="client-name">TAO Group</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">Akamai</div>
+                        <div class="client-name">Akamai Technologies</div>
+                    </div>
+                    <!-- Duplicate for smooth scrolling -->
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">Las Vegas</div>
+                        <div class="client-name">City of Las Vegas</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">Forward Air</div>
+                        <div class="client-name">Forward Air</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">Barrick Gold</div>
+                        <div class="client-name">Barrick Gold</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">TJX</div>
+                        <div class="client-name">TJX Companies</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">AMC</div>
+                        <div class="client-name">AMC Entertainments</div>
+                    </div>
+                    <div class="client-item">
+                        <div style="width: 120px; height: 80px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto; color: #666; font-weight: 600;">KBR</div>
+                        <div class="client-name">KBR Constructions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Owl Carousel Initialization with Autoplay -->
-<script>
-    $(document).ready(function(){
-        $(".testimonial-carousel").owlCarousel({
-            loop: true,
-            margin: 30,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 800,
-            dots: true,
-            nav: true,
-            navText: ["<", ">"],
-            responsive: {
-                0: { items: 1 },
-                768: { items: 1 },
-                992: { items: 2 },
-                1200: { items: 3 }
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it. Here's what our clients have to say about our services.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div style="width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-bottom: 1rem;">PS</div>
+                        <p class="testimonial-text">
+                            "SLN Cloud Consulting Inc. is a highly professional and knowledgeable Oracle HCM partner. 
+                            They played a critical role in the City of Philadelphia's Oracle implementation initiative."
+                        </p>
+                        <div class="testimonial-author">Prachi Sathe</div>
+                        <div class="testimonial-role">Director, City of Philadelphia</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div style="width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-bottom: 1rem;">AM</div>
+                        <p class="testimonial-text">
+                            "Working with SLN Cloud was a game-changer for our organization. Their in-depth understanding 
+                            of Oracle solutions helped streamline our processes significantly."
+                        </p>
+                        <div class="testimonial-author">Anita Mehra</div>
+                        <div class="testimonial-role">IT Manager, UL LLC</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div style="width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; margin-bottom: 1rem;">MR</div>
+                        <p class="testimonial-text">
+                            "The SLN Cloud team brought both innovation and professionalism. Their ability to adapt 
+                            Oracle HCM to our business needs was outstanding."
+                        </p>
+                        <div class="testimonial-author">Michael Rodriguez</div>
+                        <div class="testimonial-role">HR Director, Brookdale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Our Office</h4>
+                        <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem; color: var(--primary-color);"></i>
+                            <strong>Headquarters:</strong><br>
+                            1815 Carriage Oaks Ln,<br>
+                            Katy, TX 77494
+                        </p>
+                        <p style="color: rgba(255,255,255,0.8); margin-bottom: 0.5rem;">
+                            <i class="fas fa-phone" style="margin-right: 0.5rem; color: var(--primary-color);"></i>
+                            +1 346-637-9669
+                        </p>
+                        <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">
+                            <i class="fas fa-envelope" style="margin-right: 0.5rem; color: var(--primary-color);"></i>
+                            admin@slncc.com
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <a href="#about" class="footer-link">About Us</a>
+                        <a href="#services" class="footer-link">Services</a>
+                        <a href="#clients" class="footer-link">Clients</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Careers</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Services</h4>
+                        <a href="#" class="footer-link">Oracle Cloud ERP</a>
+                        <a href="#" class="footer-link">Oracle HCM</a>
+                        <a href="#" class="footer-link">Oracle SCM</a>
+                        <a href="#" class="footer-link">OCI Infrastructure</a>
+                        <a href="#" class="footer-link">Managed Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Business Hours</h4>
+                        <p style="color: rgba(255,255,255,0.8); margin-bottom: 0.5rem;">Monday - Friday</p>
+                        <p style="color: white; font-weight: 600; margin-bottom: 1rem;">09:00 AM - 07:00 PM (CST)</p>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                            Ready to transform your business? Contact us for a free consultation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        © 2024 SLN Cloud Consulting Inc. All rights reserved.
+                    </div>
+                    <div class="col-md-6" style="text-align: right;">
+                        <span style="color: rgba(255,255,255,0.5);">Designed with</span> 
+                        <i class="fas fa-heart" style="color: #e11d48; margin: 0 0.25rem;"></i> 
+                        <span style="color: rgba(255,255,255,0.5);">by Vraha Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Loading Spinner
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loadingSpinner').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('loadingSpinner').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('backToTop');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
             }
         });
 
-        // Optional: Animate each item when it comes into view
-        $(".testimonial-carousel").on("changed.owl.carousel", function(event) {
-            let items = $(".owl-item.active .testimonial-item");
-            items.each(function(i, el) {
-                $(el).removeClass("animate__animated animate__fadeInUp");
-                setTimeout(() => {
-                    $(el).addClass("animate__animated animate__fadeInUp");
-                }, 100);
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
-    });
-</script>
 
+        // Back to Top Button
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
 
-    <!-- Testimonial End -->
+        // Mobile Menu Close on Link Click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
 
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card, .feature-card, .testimonial-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Head Quarters:<br>
-1815 Carriage Oaks Ln,<br>
-                    Katy, TX 77494</p>
-                
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 346-637-9669</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@slncc.com <br>harideep.gaddam@slncc.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="#">Vraha Solutions</a>
+        // Observe elements for scroll animations
+        document.querySelectorAll('.service-card, .feature-card, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
+        // Counter Animation
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            
+            updateCounter();
+        }
 
+        // Add typing effect to hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        // Initialize typing effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 50);
+            }
+        }, 1500);
+    </script>
 </body>
-
 </html>
