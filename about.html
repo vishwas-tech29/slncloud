@@ -3,436 +3,430 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SLN Cloud Consulting Inc</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us | SLN Cloud Consulting Inc</title>
+    <meta name="description" content="Learn about SLN Cloud Consulting's vision, mission, and values as a leading IT services provider specializing in Oracle solutions and business transformation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" as="style">
+    <link rel="preload" href="css/style.min.css" as="style">
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Icons & Libraries -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <style>
+        .page-header {
+            background: url('img/about-bg.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 6rem 0;
+        }
+
+        .page-header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .page-header p {
+            font-size: 1.25rem;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Spinner -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-
-    <!-- Topbar -->
-    
-
-    <!-- Navbar -->
-    <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('d6a2bc67-9ac4-449c-ae05-5fc59b24edd9.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-   #navbar {
-        background: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease-in-out;
-        z-index: 999;
-    }
-
-    #navbar .nav-link {
-        color: #333;
-        font-weight: 500;
-        margin-left: 20px;
-        transition: 0.3s;
-    }
-
-    #navbar .nav-link:hover {
-        color: #2563eb;
-    }
-
-    #navbar .navbar-brand img {
-        width: 50px;
-        height: auto;
-        margin-right: 10px;
-    }
-
-    #navbar .navbar-brand div {
-        line-height: 1.2;
-    }
-
-    /* Sticky shadow on scroll */
-    .scrolled {
-        background-color: #ffffff !important;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-  </style>
-
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#hero">
-            <img src="/img/SLN Logo_1.png" alt="">
-            <div>
-                <div style="font-size: 1.2rem; font-weight: 700; line-height: 1;">SLN Cloud Consulting</div>
-                <div style="font-size: 0.75rem; color: var(--text-light); font-weight: 400;">Where Strategy Meets Execution</div>
-            </div>
-        </a>
-
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="/service.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="/project.html">Careers</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-            </ul>
+    <div id="spinner" class="spinner-wrapper">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-</nav>
 
-<!-- Bootstrap 5 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Scroll effect for sticky nav shadow -->
-<script>
-    window.addEventListener('scroll', function () {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 30) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-</script>
-
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/SLN-Logo.png" alt="SLN Cloud Consulting Logo" width="50" height="50">
+                <div class="ms-2">
+                    <div class="fw-bold">SLN Cloud Consulting</div>
+                    <div class="small text-muted">Where Strategy Meets Execution</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Page Header -->
-    <div class="container-fluid page-header py-5 mb-5 position-relative wow fadeIn" data-wow-delay="0.1s"
-     style="background: url('/img/carousel-2.jpg') center center / cover no-repeat; height: 500px;">
-
-    <!-- Overlay -->
-    <div class="position-absolute top-0 start-0 w-100 h-100" 
-         style="background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
-
-    <!-- Content -->
-    <div class="container text-center py-5 position-relative" style="z-index: 2;">
-        <h1 class="display-2 text-white mb-3 animated slideInDown py-5">About us</h1>
-        <nav aria-label="breadcrumb" class="animated slideInDown">
-            
-        </nav>
-    </div>
-</div>
-
-    <!-- About Section -->
-    <!-- Add this inside your <head> -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-    .vision-section {
-        background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center/cover no-repeat;
-        padding: 80px 20px;
-        border-radius: 20px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        color: #1f2937;
-    }
-
-    .vision-section h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #1f2937;
-        margin-bottom: 30px;
-        position: relative;
-    }
-
-    .vision-section h2::after {
-        content: "";
-        position: absolute;
-        width: 60px;
-        height: 4px;
-        background-color: #3b82f6;
-        left: 0;
-        bottom: -10px;
-    }
-
-    .vision-section p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #4b5563;
-    }
-
-    @media (max-width: 768px) {
-        .vision-section h2 {
-            font-size: 2rem;
-        }
-
-        .vision-section {
-            padding: 60px 15px;
-        }
-    }
-</style>
-
-<!-- Vision Section -->
-<div class="container vision-section" data-aos="fade-up" data-aos-duration="1200">
-    <div class="row">
-        <div class="col">
-            <h2>Our Vision: Business Transformation with Ease</h2>
-            <p>
-                SLN Cloud Consulting is the fastest growing IT Services Company and has evolved into a trusted solution provider for many customers from various industries. We specialize in healthcare, energy, insurance, high-tech, internet services and utilities, and public sectors. Our services span from ERP implementations, Managed Services, Product Development and Staff Augmentation.
-                <br><br>
-                Our team brings several years of combined industry experience with the aforementioned technologies and sets the standard for excellence with successful, timely, and cost-effective implementations. Our consultants are recognized within the industry as some of the best and brightest in delivering a proven and complete solution.
-                <br><br>
-                Founded by a group of IT Professionals with decades of experience across the globe, many of our team members were Oracle product leaders. As a trusted partner for business, we believe that open communication with our clients is the key to developing relevant solutions. We focus on working with you every step of the way to design solutions that are efficient, dynamic, and scalable so that your business always keeps pace with industry changes.
-            </p>
+    <header class="page-header">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 fw-bold text-white mb-3">About SLN Cloud Consulting</h1>
+                    <p class="lead text-white mb-0">Driving digital transformation through innovation and expertise</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </header>
 
-<!-- AOS Script (Place before </body>) -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+    <!-- Vision Section -->
+    <section class="py-5 py-lg-7 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="display-5 fw-bold mb-4 text-primary">Our Vision: Business Transformation with Ease</h2>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <p class="lead">SLN Cloud Consulting is the fastest growing IT Services Company and has evolved into a trusted solution provider for many customers from various industries.</p>
+                                    <p>We specialize in healthcare, energy, insurance, high-tech, internet services and utilities, and public sectors. Our services span from ERP implementations, Managed Services, Product Development and Staff Augmentation.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Our team brings several years of combined industry experience with the aforementioned technologies and sets the standard for excellence with successful, timely, and cost-effective implementations.</p>
+                                    <p>Founded by a group of IT Professionals with decades of experience across the globe, many of our team members were Oracle product leaders. As a trusted partner for business, we believe that open communication with our clients is the key to developing relevant solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- SLN Story Section -->
-<!-- SLN STORY SECTION -->
- <style>
-    .sln-story {
-        background-color: #f9fafb;
-        padding: 80px 20px;
-    }
+    <section class="py-5 py-lg-7">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-down">
+                <h2 class="display-5 fw-bold mb-3 text-primary">The SLN Story</h2>
+                <p class="lead text-muted">To be a trusted partner committed to your success</p>
+            </div>
 
-    .sln-story h2 {
-        color: #1d4ed8;
-        margin-bottom: 30px;
-    }
+            <div class="row g-4">
+                <!-- Vision Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="img/vision.jpg" class="card-img-top" alt="Our Vision" loading="lazy">
+                        <div class="card-body text-center">
+                            <h3 class="h4 mb-3">Vision</h3>
+                            <p class="text-muted">To redefine customer business through transformation, technology & talent.</p>
+                        </div>
+                    </div>
+                </div>
 
-    .sln-story p {
-        color: #374151;
-        line-height: 1.6;
-    }
+                <!-- Mission Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="img/mission.jpg" class="card-img-top" alt="Our Mission" loading="lazy">
+                        <div class="card-body text-center">
+                            <h3 class="h4 mb-3">Mission</h3>
+                            <p class="text-muted">Empowering customers to focus on core business while we deliver innovative solutions.</p>
+                        </div>
+                    </div>
+                </div>
 
-    .sln-card {
-        background: white;
-        border-radius: 15px;
-        padding: 30px 20px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease;
-    }
-
-    .sln-card:hover {
-        transform: translateY(-8px);
-    }
-
-    .sln-card img {
-        border-radius: 12px;
-        max-height: 250px;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .sln-card h4 {
-        color: #1d4ed8;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-</style>
-   
-
-<div class="container sln-section" id="sln-story">
-    <div class="text-center mb-5" data-aos="fade-down">
-        <h2 class="fw-bold display-5">SLN STORY</h2>
-        <p class="lead">To be a trusted partner committed to your success</p>
-        <p class="text-muted">SLN Cloud Consulting partners with businesses to build future-ready digital capabilities. We believe in open communication and delivering solutions that evolve with the changing digital world.</p>
-    </div>
-
-    <div class="row g-4">
-        <!-- Vision -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="sln-card text-center">
-                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe" alt="Vision">
-                <h4>VISION</h4>
-                <p>To redefine customer business through transformation, technology & talent.</p>
+                <!-- Values Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="img/values.jpg" class="card-img-top" alt="Our Values" loading="lazy">
+                        <div class="card-body text-center">
+                            <h3 class="h4 mb-3">Core Values</h3>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-2">Integrity: We honor our word</li>
+                                <li class="mb-2">Innovation: We evolve constantly</li>
+                                <li>Serve: We deliver with purpose</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Mission -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="sln-card text-center">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Mission">
-                <h4>MISSION</h4>
-                <p>Empowering customers to focus on core business while we deliver innovative solutions.</p>
+    <!-- Mission Statement -->
+    <section class="py-5 py-lg-7 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="h3 fw-bold mb-4 text-primary">Mission Statement</h2>
+                            <p class="lead">At SLN Cloud Consulting Inc., our mission is to deliver world-class Oracle solutions that drive business transformation.</p>
+                            <p>We are committed to putting our clients first—every time—by providing innovative, scalable, and cost-effective technology services tailored to their unique needs. Through deep Oracle expertise, collaborative partnerships, and unwavering integrity, we empower organizations to succeed in a rapidly evolving digital landscape.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Values -->
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="sln-card text-center">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Core Values">
-                <h4>CORE VALUES</h4>
-                <p class="mb-1">Integrity: We honor our word.</p>
-                <p class="mb-1">Innovation: We evolve constantly.</p>
-                <p>Serve: We deliver with purpose and care.</p>
+    <!-- Vision Statement -->
+    <section class="py-5 py-lg-7">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="h3 fw-bold mb-4 text-primary">Vision Statement</h2>
+                            <p>To be the most trusted Oracle consulting partner globally—known for putting clients first, delivering excellence in every engagement, and enabling businesses to thrive through innovation, efficiency, and intelligent cloud solutions.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- MISSION, VISION, VALUES TEXT BLOCK -->
-<div class="container py-5" data-aos="fade-up">
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <h3 class="mb-3">Mission Statement</h3>
-            <p class="text-muted">At SLN Cloud Consulting Inc., our mission is to deliver world-class Oracle solutions that drive business transformation, maximize value, and exceed client expectations. We are committed to putting our clients first—every time—by providing innovative, scalable, and cost-effective technology services tailored to their unique needs.</p>
-            <p class="text-muted">Through deep Oracle expertise, collaborative partnerships, and unwavering integrity, we empower organizations to succeed in a rapidly evolving digital landscape.</p>
-
-            <h3 class="mt-5 mb-3">Vision Statement</h3>
-            <p class="text-muted">To be the most trusted Oracle consulting partner globally—known for putting clients first, delivering excellence in every engagement, and enabling businesses to thrive through innovation, efficiency, and intelligent cloud solutions.</p>
-
-            <h3 class="mt-5 mb-3">Core Values</h3>
-            <ul class="core-values-list text-muted">
-                <li><strong>Client First:</strong> Our clients are our top priority. We measure success by the value we create.</li>
-                <li><strong>Excellence:</strong> We strive for quality, precision, and impact in everything we do.</li>
-                <li><strong>Integrity:</strong> Honest communication, ethical practices—always.</li>
-                <li><strong>Innovation:</strong> We embrace tech to help clients stay ahead of the curve.</li>
-                <li><strong>Collaboration:</strong> Strong partnerships through transparency and trust.</li>
-                <li><strong>Accountability:</strong> We deliver on promises—on time and with results.</li>
-            </ul>
+    <!-- Core Values -->
+    <section class="py-5 py-lg-7 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Our Core Values</h2>
+                    <p class="lead">The principles that guide everything we do</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card h-100 bg-primary-dark border-0">
+                        <div class="card-body p-4">
+                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Client First</h3>
+                            <p class="mb-0">Our clients are our top priority. We measure success by the value we create.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 bg-primary-dark border-0">
+                        <div class="card-body p-4">
+                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Excellence</h3>
+                            <p class="mb-0">We strive for quality, precision, and impact in everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 bg-primary-dark border-0">
+                        <div class="card-body p-4">
+                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Integrity</h3>
+                            <p class="mb-0">Honest communication, ethical practices—always.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card h-100 bg-primary-dark border-0">
+                        <div class="card-body p-4">
+                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Innovation</h3>
+                            <p class="mb-0">We embrace tech to help clients stay ahead of the curve.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 bg-primary-dark border-0">
+                        <div class="card-body p-4">
+                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Collaboration</h3>
+                            <p class="mb-0">Strong partnerships through transparency and trust.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 bg-primary-dark border-0">
+                        <div class="card-body p-4">
+                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Accountability</h3>
+                            <p class="mb-0">We deliver on promises—on time and with results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Footer -->
-
-
+    <!-- CTA Section -->
+    <section class="py-5 py-lg-7 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2 class="h1 fw-bold mb-3">Ready to transform your business?</h2>
+                    <p class="lead mb-0">Let's discuss how SLN Cloud Consulting can help you achieve your goals.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg px-4">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-      <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Head Quarters:<br>
-1815 Carriage Oaks Ln,<br>
-                    Katy, TX 77494</p>
-                
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 346-637-9669</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@slncc.com <br>harideep.gaddam@slncc.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
+    <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h5 mb-3">Our Office</h3>
+                    <address class="mb-4">
+                        <strong>Headquarters:</strong><br>
+                        1815 Carriage Oaks Ln<br>
+                        Katy, TX 77494
+                    </address>
+                    <p class="mb-2"><i class="fas fa-phone-alt me-2"></i> +1 346-637-9669</p>
+                    <p class="mb-2"><i class="fas fa-envelope me-2"></i> admin@slncc.com</p>
+                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> harideep.gaddam@slncc.com</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="fw-medium text-light" href="#">Vraha Solutions</a>
-
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white-50">Careers</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5 mb-3">Business Hours</h3>
+                    <p class="mb-1">Monday - Friday</p>
+                    <p class="fw-light">9:00 AM - 7:00 PM</p>
+                    <p class="mb-1">Saturday - Sunday</p>
+                    <p class="fw-light">Closed</p>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h3 class="h5 mb-3">Stay Connected</h3>
+                    <div class="d-flex mb-4">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <h3 class="h5 mb-3">Newsletter</h3>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email">
+                            <button class="btn btn-primary btn-sm" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 small text-white-50">&copy; 2023 SLN Cloud Consulting Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 small text-white-50">Designed by <a href="#" class="text-white">Vraha Solutions</a></p>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-primary btn-lg rounded-circle back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-    <!-- Video Modal -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content bg-dark">
-                <div class="modal-body p-0">
-                    <div class="ratio ratio-16x9">
-                        <iframe id="video" src="" allowfullscreen allow="autoplay"></iframe>
-                    </div>
-                </div>
-                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="js/main.js"></script>
-
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Main JS -->
+    <script src="js/main.min.js"></script>
+    
     <script>
-        // Initialize WOW animations
-        new WOW().init();
-
-        // Set video src in modal
-        $('#videoModal').on('show.bs.modal', function (event) {
-            const button = $(event.relatedTarget);
-            const videoSrc = button.data("src");
-            $("#video").attr("src", videoSrc + "?autoplay=1&modestbranding=1");
-        }).on('hide.bs.modal', function () {
-            $("#video").attr("src", "");
+        // Initialize AOS animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            var backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Remove spinner when page loads
+        window.addEventListener('load', function() {
+            var spinner = document.getElementById('spinner');
+            spinner.style.transition = 'opacity 0.5s ease';
+            spinner.style.opacity = '0';
+            setTimeout(function() {
+                spinner.style.display = 'none';
+            }, 500);
         });
     </script>
 </body>
-
 </html>
