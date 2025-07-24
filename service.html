@@ -332,10 +332,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="/index.html">
                 <img src="/img/SLN Logo_1.png" alt="SLN Cloud Consulting Logo" style="height: 50px; margin-right: 12px;">
                 <div>
-                    <div style="font-size: 1.2rem; font-weight: 700; line-height: 1; color: var(--primary-color)">SLN Cloud Consulting</div>
+                    <div style="font-size: 1.2rem; font-weight: 700; line-height: 1; color: var(--primary-color)">SLN Cloud Consulting inc</div>
                     <div style="font-size: 0.75rem; color: var(--primary-color); font-weight: 400;">Where Strategy Meets Execution</div>
                 </div>
             </a>
@@ -359,6 +359,20 @@
             </div>
         </div>
     </nav>
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scroll effect for sticky nav shadow -->
+<script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 30) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 
     <!-- Page Header -->
     <div class="container-fluid page-header py-5 mb-5 position-relative" style="background: url('/img/still-life-business-roles-with-various-mechanism-pieces.jpg') center center/cover no-repeat;">

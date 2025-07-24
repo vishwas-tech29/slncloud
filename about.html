@@ -6,122 +6,607 @@
     <title>About Us | SLN Cloud Consulting Inc</title>
     <meta name="description" content="Learn about SLN Cloud Consulting's vision, mission, and values as a leading IT services provider specializing in Oracle solutions and business transformation.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-
+    <meta name="keywords" content="Cloud Consulting, IT Services, Oracle Solutions, Business Transformation, Digital Innovation">
+    
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" as="style">
-    <link rel="preload" href="css/style.min.css" as="style">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.slncc.com/about.html">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="About Us | SLN Cloud Consulting Inc">
+    <meta property="og:description" content="Discover SLN Cloud Consulting's vision for business transformation through technology and innovation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.slncc.com/about.html">
+    <meta property="og:image" content="https://www.slncc.com/img/about-og-image.jpg">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons & Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link href="css/style.min.css" rel="stylesheet">
-
     <style>
-        .page-header {
-            background: url('img/about-bg.jpg') no-repeat center center;
-            background-size: cover;
-            padding: 6rem 0;
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #93c5fd;
+            --secondary: #6b7280;
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --border-radius: 12px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
-
-        .page-header .overlay {
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #374151;
+            line-height: 1.6;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        /* Navbar Styles */
+        #navbar {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            padding: 1rem 0;
+        }
+        
+        #navbar.scrolled {
+            box-shadow: var(--shadow-md);
+            padding: 0.5rem 0;
+        }
+        
+        #navbar .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+        }
+        
+        #navbar .navbar-brand img {
+            height: 40px;
+            width: auto;
+            margin-right: 12px;
+        }
+        
+        #navbar .navbar-brand .brand-text {
+            line-height: 1.2;
+        }
+        
+        #navbar .navbar-brand .brand-subtext {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        #navbar .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            margin: 0 0.25rem;
+            position: relative;
+            transition: var(--transition);
+        }
+        
+        #navbar .nav-link:hover,
+        #navbar .nav-link.active {
+            color: var(--primary);
+        }
+        
+        #navbar .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 1rem;
+            right: 1rem;
+            height: 2px;
+            background-color: var(--primary);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+        
+        #navbar .nav-link:hover::after,
+        #navbar .nav-link.active::after {
+            transform: scaleX(1);
+        }
+        
+        /* Page Header */
+        .page-header {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('img/about-hero.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .page-header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1s ease-out;
+        }
+        
+        .page-header p.lead {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.25rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        /* Vision Section */
+        .vision-section {
+            background-color: white;
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .vision-section::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: url('/img/carousel-1.jpg') repeat;
+            opacity: 0.05;
+            z-index: 0;
         }
-
-        .page-header h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
+        
+        .vision-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
             margin-bottom: 1.5rem;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            color: var(--dark);
         }
-
-        .page-header p {
-            font-size: 1.25rem;
+        
+        .section-title .title-divider {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+        
+        /* SLN Story Section */
+        .sln-story {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .sln-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            height: 100%;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sln-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
+            transition: var(--transition);
+        }
+        
+        .sln-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .sln-card:hover::before {
+            height: 100%;
+        }
+        
+        .sln-card img {
+            border-radius: var(--border-radius);
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .sln-card:hover img {
+            transform: scale(1.03);
+        }
+        
+        .sln-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .sln-card h4::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .sln-card:hover h4::after {
+            width: 80px;
+        }
+        
+        /* Values Section */
+        .values-section {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .values-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .values-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .values-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .values-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .values-section ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .values-section ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        /* Team Section */
+        .team-section {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            margin-bottom: 2rem;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .team-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .team-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .team-card:hover .team-img img {
+            transform: scale(1.1);
+        }
+        
+        .team-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .team-info h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-info p {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .team-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            transition: var(--transition);
+        }
+        
+        .team-social a:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                height: 400px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .sln-card {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Floating animation for images */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
         }
     </style>
 </head>
 
 <body>
     <!-- Spinner -->
-    <div id="spinner" class="spinner-wrapper">
-        <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm" id="mainNav">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/SLN-Logo.png" alt="SLN Cloud Consulting Logo" width="50" height="50">
-                <div class="ms-2">
-                    <div class="fw-bold">SLN Cloud Consulting</div>
-                    <div class="small text-muted">Where Strategy Meets Execution</div>
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/SLN Logo_1.png" alt="SLN Cloud Consulting Logo">
+                <div class="brand-text d-inline-block">
+                    <div>SLN Cloud Consulting</div>
+                    <div class="brand-subtext">Where Strategy Meets Execution</div>
                 </div>
             </a>
             
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/project.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <header class="page-header">
-        <div class="overlay"></div>
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-3 fw-bold text-white mb-3">About SLN Cloud Consulting</h1>
-                    <p class="lead text-white mb-0">Driving digital transformation through innovation and expertise</p>
+    <div class="page-header">
+        <div class="page-header-content">
+            <h1 class="animated fadeInDown">About Our Company</h1>
+            <p class="lead text-white animated fadeInUp">Driving digital transformation through innovation and expertise</p>
+        </div>
+    </div>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="vision-content">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Our Vision: Business Transformation with Ease</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="https://t3.ftcdn.net/jpg/04/81/73/28/360_F_481732877_S6BGXkXarLI0FJzvMApZG7PwbNDzNJTi.jpg" alt="Business Transformation" class="img-fluid rounded floating" style="max-height: 400px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                        <p class="lead">SLN Cloud Consulting is the fastest growing IT Services Company and has evolved into a trusted solution provider for many customers from various industries.</p>
+                        
+                        <p>We specialize in healthcare, energy, insurance, high-tech, internet services and utilities, and public sectors. Our services span from ERP implementations, Managed Services, Product Development and Staff Augmentation.</p>
+                        
+                        <p>Our team brings several years of combined industry experience with the aforementioned technologies and sets the standard for excellence with successful, timely, and cost-effective implementations.</p>
+                    </div>
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+                        <p>Founded by a group of IT Professionals with decades of experience across the globe, many of our team members were Oracle product leaders. As a trusted partner for business, we believe that open communication with our clients is the key to developing relevant solutions. We focus on working with you every step of the way to design solutions that are efficient, dynamic, and scalable so that your business always keeps pace with industry changes.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Vision Section -->
-    <section class="py-5 py-lg-7 bg-light">
+    <!-- Stats Section -->
+    <section class="stats-section">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4 p-lg-5">
-                            <h2 class="display-5 fw-bold mb-4 text-primary">Our Vision: Business Transformation with Ease</h2>
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <p class="lead">SLN Cloud Consulting is the fastest growing IT Services Company and has evolved into a trusted solution provider for many customers from various industries.</p>
-                                    <p>We specialize in healthcare, energy, insurance, high-tech, internet services and utilities, and public sectors. Our services span from ERP implementations, Managed Services, Product Development and Staff Augmentation.</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Our team brings several years of combined industry experience with the aforementioned technologies and sets the standard for excellence with successful, timely, and cost-effective implementations.</p>
-                                    <p>Founded by a group of IT Professionals with decades of experience across the globe, many of our team members were Oracle product leaders. As a trusted partner for business, we believe that open communication with our clients is the key to developing relevant solutions.</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-6" data-aos="fade-up">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Clients Worldwide</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="75">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Expert Consultants</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Years Experience</div>
                     </div>
                 </div>
             </div>
@@ -129,303 +614,302 @@
     </section>
 
     <!-- SLN Story Section -->
-    <section class="py-5 py-lg-7">
+    <section class="sln-story">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-down">
-                <h2 class="display-5 fw-bold mb-3 text-primary">The SLN Story</h2>
-                <p class="lead text-muted">To be a trusted partner committed to your success</p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Vision Card -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 border-0 shadow-sm hover-lift">
-                        <img src="img/vision.jpg" class="card-img-top" alt="Our Vision" loading="lazy">
-                        <div class="card-body text-center">
-                            <h3 class="h4 mb-3">Vision</h3>
-                            <p class="text-muted">To redefine customer business through transformation, technology & talent.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mission Card -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 border-0 shadow-sm hover-lift">
-                        <img src="img/mission.jpg" class="card-img-top" alt="Our Mission" loading="lazy">
-                        <div class="card-body text-center">
-                            <h3 class="h4 mb-3">Mission</h3>
-                            <p class="text-muted">Empowering customers to focus on core business while we deliver innovative solutions.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Values Card -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card h-100 border-0 shadow-sm hover-lift">
-                        <img src="img/values.jpg" class="card-img-top" alt="Our Values" loading="lazy">
-                        <div class="card-body text-center">
-                            <h3 class="h4 mb-3">Core Values</h3>
-                            <ul class="list-unstyled text-muted">
-                                <li class="mb-2">Integrity: We honor our word</li>
-                                <li class="mb-2">Innovation: We evolve constantly</li>
-                                <li>Serve: We deliver with purpose</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Statement -->
-    <section class="py-5 py-lg-7 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4 p-lg-5">
-                            <h2 class="h3 fw-bold mb-4 text-primary">Mission Statement</h2>
-                            <p class="lead">At SLN Cloud Consulting Inc., our mission is to deliver world-class Oracle solutions that drive business transformation.</p>
-                            <p>We are committed to putting our clients first—every time—by providing innovative, scalable, and cost-effective technology services tailored to their unique needs. Through deep Oracle expertise, collaborative partnerships, and unwavering integrity, we empower organizations to succeed in a rapidly evolving digital landscape.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vision Statement -->
-    <section class="py-5 py-lg-7">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4 p-lg-5">
-                            <h2 class="h3 fw-bold mb-4 text-primary">Vision Statement</h2>
-                            <p>To be the most trusted Oracle consulting partner globally—known for putting clients first, delivering excellence in every engagement, and enabling businesses to thrive through innovation, efficiency, and intelligent cloud solutions.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values -->
-    <section class="py-5 py-lg-7 bg-primary text-white">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="display-5 fw-bold mb-3">Our Core Values</h2>
-                    <p class="lead">The principles that guide everything we do</p>
-                </div>
+            <div class="section-title" data-aos="fade-up">
+                <h2>The SLN Story</h2>
+                <div class="title-divider"></div>
+                <p class="lead">To be a trusted partner committed to your success</p>
             </div>
             
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card h-100 bg-primary-dark border-0">
-                        <div class="card-body p-4">
-                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h3 class="h4 mb-3">Client First</h3>
-                            <p class="mb-0">Our clients are our top priority. We measure success by the value we create.</p>
-                        </div>
+                <!-- Vision Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sln-card">
+                        <img src="https://thumbs.dreamstime.com/b/vision-concept-text-blue-paper-black-ball-point-pen-aside-52175954.jpg" alt="Our Vision" class="img-fluid">
+                        <h4>Our Vision</h4>
+                        <p>To redefine customer business through transformation, technology & talent. We envision a future where every business achieves its full potential through innovative cloud solutions.</p>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 bg-primary-dark border-0">
-                        <div class="card-body p-4">
-                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
-                                <i class="fas fa-medal"></i>
-                            </div>
-                            <h3 class="h4 mb-3">Excellence</h3>
-                            <p class="mb-0">We strive for quality, precision, and impact in everything we do.</p>
-                        </div>
+                <!-- Mission Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="sln-card">
+                        <img src="https://media.istockphoto.com/id/667556640/photo/text-mission-appearing-behind-ripped-brown-paper.jpg?b=1&s=170667a&w=0&k=20&c=AjSl3pEhBAAFINsy3SNNqiC4Y8buUiqiDlAGX4EnuGI=" alt="Our Mission" class="img-fluid">
+                        <h4>Our Mission</h4>
+                        <p>Empowering customers to focus on core business while we deliver innovative solutions. We bridge the gap between business needs and technological capabilities.</p>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 bg-primary-dark border-0">
-                        <div class="card-body p-4">
-                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
-                                <i class="fas fa-handshake"></i>
-                            </div>
-                            <h3 class="h4 mb-3">Integrity</h3>
-                            <p class="mb-0">Honest communication, ethical practices—always.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card h-100 bg-primary-dark border-0">
-                        <div class="card-body p-4">
-                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h3 class="h4 mb-3">Innovation</h3>
-                            <p class="mb-0">We embrace tech to help clients stay ahead of the curve.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100 bg-primary-dark border-0">
-                        <div class="card-body p-4">
-                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
-                                <i class="fas fa-hands-helping"></i>
-                            </div>
-                            <h3 class="h4 mb-3">Collaboration</h3>
-                            <p class="mb-0">Strong partnerships through transparency and trust.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100 bg-primary-dark border-0">
-                        <div class="card-body p-4">
-                            <div class="icon-lg bg-white text-primary rounded-circle mb-4">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <h3 class="h4 mb-3">Accountability</h3>
-                            <p class="mb-0">We deliver on promises—on time and with results.</p>
-                        </div>
+                <!-- Values Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="sln-card">
+                        <img src="https://image.shutterstock.com/image-illustration/our-values-text-written-over-260nw-1254033580.jpg" alt="Our Values" class="img-fluid">
+                        <h4>Our Values</h4>
+                        <p><strong>Integrity:</strong> We honor our word.<br>
+                           <strong>Innovation:</strong> We evolve constantly.<br>
+                           <strong>Service:</strong> We deliver with purpose and care.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-5 py-lg-7 bg-dark text-white">
+    <!-- Values Section -->
+    <section class="values-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8 mb-4 mb-lg-0">
-                    <h2 class="h1 fw-bold mb-3">Ready to transform your business?</h2>
-                    <p class="lead mb-0">Let's discuss how SLN Cloud Consulting can help you achieve your goals.</p>
+            <div class="values-content">
+                <div data-aos="fade-up">
+                    <h3>Mission Statement</h3>
+                    <p>At SLN Cloud Consulting Inc., our mission is to deliver world-class Oracle solutions that drive business transformation, maximize value, and exceed client expectations. We are committed to putting our clients first—every time—by providing innovative, scalable, and cost-effective technology services tailored to their unique needs.</p>
+                    <p>Through deep Oracle expertise, collaborative partnerships, and unwavering integrity, we empower organizations to succeed in a rapidly evolving digital landscape.</p>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a href="contact.html" class="btn btn-light btn-lg px-4">Contact Us</a>
+                
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3>Vision Statement</h3>
+                    <p>To be the most trusted Oracle consulting partner globally—known for putting clients first, delivering excellence in every engagement, and enabling businesses to thrive through innovation, efficiency, and intelligent cloud solutions.</p>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3>Core Values</h3>
+                    <ul>
+                        <li><strong>Client First:</strong> Our clients are our top priority. We measure success by the value we create.</li>
+                        <li><strong>Excellence:</strong> We strive for quality, precision, and impact in everything we do.</li>
+                        <li><strong>Integrity:</strong> Honest communication, ethical practices—always.</li>
+                        <li><strong>Innovation:</strong> We embrace technology to help clients stay ahead of the curve.</li>
+                        <li><strong>Collaboration:</strong> Strong partnerships through transparency and trust.</li>
+                        <li><strong>Accountability:</strong> We deliver on promises—on time and with results.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Team Section -->
+    <!-- <section class="team-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Meet Our Leadership</h2>
+                <div class="title-divider"></div>
+                <p class="lead">The experienced professionals driving our success</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="img/team-1.jpg" alt="Team Member">
+                        </div>
+                        <div class="team-info">
+                            <h4>John Smith</h4>
+                            <p>CEO & Founder</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="img/team-2.jpg" alt="Team Member">
+                        </div>
+                        <div class="team-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CTO</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="img/team-3.jpg" alt="Team Member">
+                        </div>
+                        <div class="team-info">
+                            <h4>Michael Chen</h4>
+                            <p>VP of Operations</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <img src="img/team-4.jpg" alt="Team Member">
+                        </div>
+                        <div class="team-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Director of Consulting</p>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h3 class="h5 mb-3">Our Office</h3>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-uppercase mb-4">Our Office</h5>
                     <address class="mb-4">
-                        <strong>Headquarters:</strong><br>
-                        1815 Carriage Oaks Ln<br>
-                        Katy, TX 77494
+                        <p><i class="fas fa-map-marker-alt me-2"></i> <strong>Headquarters:</strong><br>
+                        1815 Carriage Oaks Ln,<br>
+                        Katy, TX 77494</p>
+                        <p><i class="fas fa-phone-alt me-2"></i> +1 346-637-9669</p>
+                        <p><i class="fas fa-envelope me-2"></i> admin@slncc.com<br>
+                        harideep.gaddam@slncc.com</p>
                     </address>
-                    <p class="mb-2"><i class="fas fa-phone-alt me-2"></i> +1 346-637-9669</p>
-                    <p class="mb-2"><i class="fas fa-envelope me-2"></i> admin@slncc.com</p>
-                    <p class="mb-0"><i class="fas fa-envelope me-2"></i> harideep.gaddam@slncc.com</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 
-                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
-                    <h3 class="h5 mb-3">Quick Links</h3>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
-                        <li class="mb-2"><a href="about.html" class="text-white-50">About</a></li>
-                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
-                        <li class="mb-2"><a href="careers.html" class="text-white-50">Careers</a></li>
-                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="careers.html" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
                 
-                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
-                    <h3 class="h5 mb-3">Business Hours</h3>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Business Hours</h5>
                     <p class="mb-1">Monday - Friday</p>
-                    <p class="fw-light">9:00 AM - 7:00 PM</p>
-                    <p class="mb-1">Saturday - Sunday</p>
-                    <p class="fw-light">Closed</p>
+                    <p class="mb-4">9:00 AM - 7:00 PM</p>
+                    <p class="mb-1">Weekends</p>
+                    <p>By appointment</p>
                 </div>
                 
-                <div class="col-lg-3 col-md-4">
-                    <h3 class="h5 mb-3">Stay Connected</h3>
-                    <div class="d-flex mb-4">
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    
-                    <h3 class="h5 mb-3">Newsletter</h3>
-                    <form>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email">
-                            <button class="btn btn-primary btn-sm" type="submit">Sign Up</button>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
                     </form>
+                    <small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
                 </div>
             </div>
             
-            <hr class="my-4 border-secondary">
+            <hr class="my-4">
             
             <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0 small text-white-50">&copy; 2023 SLN Cloud Consulting Inc. All rights reserved.</p>
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 SLN Cloud Consulting Inc. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0 small text-white-50">Designed by <a href="#" class="text-white">Vraha Solutions</a></p>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a href="#" class="text-primary text-decoration-none">Vraha Solutions</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg rounded-circle back-to-top" id="backToTop">
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary btn-lg back-to-top rounded-circle" id="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     
-    <!-- Main JS -->
-    <script src="js/main.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
     
     <script>
-        // Initialize AOS animation
+        // Initialize AOS animations
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
             once: true
         });
         
-        // Back to top button
+        // Navbar scroll effect
         window.addEventListener('scroll', function() {
-            var backToTop = document.getElementById('backToTop');
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('show');
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
             } else {
-                backToTop.classList.remove('show');
+                navbar.classList.remove('scrolled');
             }
         });
         
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
         
         // Remove spinner when page loads
         window.addEventListener('load', function() {
-            var spinner = document.getElementById('spinner');
-            spinner.style.transition = 'opacity 0.5s ease';
-            spinner.style.opacity = '0';
-            setTimeout(function() {
-                spinner.style.display = 'none';
-            }, 500);
+            const spinner = document.getElementById('spinner');
+            spinner.style.display = 'none';
+            
+            // Animate stats counting
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const updateCount = () => {
+                    current += step;
+                    if (current < target) {
+                        stat.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        stat.textContent = target + '+';
+                    }
+                };
+                
+                setTimeout(() => {
+                    updateCount();
+                }, 500);
+            });
         });
     </script>
 </body>
